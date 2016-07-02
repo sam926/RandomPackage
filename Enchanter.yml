@@ -1,0 +1,268 @@
+# Made by RandomHashTags
+EnchanterGui:
+  Slots: 27
+  ChestName: '&9Enchanter'
+  SoulTrackers:
+    Slot: 10
+    Item: 'Paper'
+    Name: 'Soul Trackers'
+    Lore:
+    - '&eBuy Soul Trackers here'
+  Books:
+    Slot: 13
+    Item: 'Book'
+    Name: 'Books'
+    Lore:
+    - '&eBuy custom books here'
+  Other:
+    Slot: 16
+    Item: 'Ink_Sack'
+    Name: 'Other'
+    Lore:
+    - '&eBuy BlackScrolls, WhiteScrolls,'
+    - '&eMystery Mob Spawners, ItemNameTags,'
+    - '&eor TransmogScrolls here'
+SoulTrackers:
+  Enabled: 'true'
+  ChestName: 'Buy Soul Trackers'
+  Slots: 18
+  Simple:
+    Enabled: 'true'
+    Slot: 2
+    Item: 'Paper'
+    Data: 0
+    Name: '&f&lSimple Soul Tracker'
+    Lore:
+    - '&ePrice: $%price%'
+    PurchaseWithCash: 'true'
+    PurchaseWithXp: 'false'
+    Price: 100000
+    XpCost: 10000
+  Unique:
+    Enabled: 'true'
+    Slot: 3
+    Item: 'Paper'
+    Data: 0
+    Name: '&a&lUnique Soul Tracker'
+    Lore:
+    - '&ePrice: $%price%'
+    PurchaseWithCash: 'true'
+    PurchaseWithXp: 'false'
+    Price: 200000
+    XpCost: 20000
+  Elite:
+    Enabled: 'true'
+    Slot: 4
+    Item: 'Paper'
+    Data: 0
+    Name: '&b&lElite Soul Tracker'
+    Lore:
+    - '&ePrice: $%price%'
+    PurchaseWithCash: 'true'
+    PurchaseWithXp: 'false'
+    Price: 300000
+    XpCost: 30000
+  Ultimate:
+    Enabled: 'true'
+    Slot: 5
+    Item: 'Paper'
+    Data: 0
+    Name: '&e&lUltimate Soul Tracker'
+    Lore:
+    - '&ePrice: $%price%'
+    PurchaseWithCash: 'true'
+    PurchaseWithXp: 'false'
+    Price: 400000
+    XpCost: 40000
+  Legendary:
+    Enabled: 'true'
+    Slot: 6
+    Item: 'Paper'
+    Data: 0
+    Name: '&6&lLegendary Soul Tracker'
+    Lore:
+    - '&ePrice: $%price%'
+    PurchaseWithCash: 'true'
+    PurchaseWithXp: 'false'
+    Price: 500000
+    XpCost: 50000
+  Back:
+    Slot: 9
+    Item: 'Golden_Apple'
+    Data: 1
+    Name: 'Back'
+    Lore:
+    - '&eGo back to the Enchanter Gui'
+Books:
+  Enabled: 'true'
+  ChestName: 'Buy Custom Books'
+  Slots: 18
+  Soul:
+    Enabled: 'true'
+    Slot: 13
+    Item: 'Stained_Glass_Pane'
+    Data: 14
+    Name: '&c&lSoul Enchantment Book'
+    Lore:
+    - '&eCost: %cost% XP'
+    PurchaseWithCash: 'false'
+    PurchaseWithXp: 'true'
+    Price: 100000
+    XpCost: 50000
+  Legendary:
+    Enabled: 'true'
+    Slot: 6
+    Item: 'Stained_Glass_Pane'
+    Data: 1
+    Name: '&6Legendary Enchantment &7(Right Click)'
+    Lore:
+    - '&7Examine to recieve a random'
+    - '&6Legendary &7enchantment book.'
+    - ' '
+    - '&b&lCOST &f%cost% EXP'
+    PurchaseWithCash: 'false'
+    PurchaseWithXp: 'true'
+    Price: 50000
+    XpCost: 25000
+  Ultimate:
+    Enabled: 'true'
+    Slot: 5
+    Item: 'Stained_Glass_Pane'
+    Data: 4
+    Name: '&eUltimate Enchantment &7(Right Click)'
+    Lore:
+    - '&7Examine to recieve a random'
+    - '&eUltimate &7enchantment book.'
+    - ' '
+    - '&b&lCOST &f%cost% EXP'
+    PurchaseWithCash: 'false'
+    PurchaseWithXp: 'true'
+    Price: 10000
+    XpCost: 5000
+  Elite:
+    Enabled: 'true'
+    Slot: 4
+    Item: 'Stained_Glass_Pane'
+    Data: 3
+    Name: '&bElite Enchantment &7(Right Click)'
+    Lore:
+    - '&7Examine to recieve a random'
+    - '&belite &7enchantment book.'
+    - ' '
+    - '&b&lCOST &f%cost% EXP'
+    PurchaseWithCash: 'false'
+    PurchaseWithXp: 'true'
+    Price: 5000
+    XpCost: 2500
+  Unique:
+    Enabled: 'true'
+    Slot: 3
+    Item: 'Stained_Glass_Pane'
+    Data: 5
+    Name: '&aUnique Enchantment &7(Right Click)'
+    Lore:
+    - '&7Examine to recieve a random'
+    - '&aunique &7enchantment book.'
+    - ' '
+    - '&b&lCOST &f%cost% EXP'
+    PurchaseWithCash: 'false'
+    PurchaseWithXp: 'true'
+    Price: 1600
+    XpCost: 800
+  Simple:
+    Enabled: 'true'
+    Slot: 2
+    Item: 'Stained_Glass_Pane'
+    Data: 0
+    Name: '&fSimple Enchantment &7(Right Click)'
+    Lore:
+    - '&7Examine to recieve a random'
+    - '&fsimple &7enchantment book.'
+    - ' '
+    - '&b&lCOST &f%cost% EXP'
+    PurchaseWithCash: 'false'
+    PurchaseWithXp: 'true'
+    Price: 800
+    XpCost: 400
+  Back:
+    Slot: 9
+    Item: 'Golden_Apple'
+    Data: 1
+    Name: 'Back'
+    Lore:
+    - '&eGo back to the Enchanter Gui'
+Other:
+  Enabled: 'true'
+  ChestName: 'Buy Misc Items'
+  Slots: 18
+  WhiteScrolls:
+    Enabled: 'true'
+    Slot: 2
+    Item: 'Paper'
+    Data: 0
+    Name: '&e&nWhite Scroll'
+    Lore:
+    - '&eCost: $%cost%'
+    PurchaseWithCash: 'true'
+    PurchaseWithXp: 'false'
+    Price: 50000
+    XpCost: 50000
+  BlackScrolls:
+    Enabled: 'true'
+    Slot: 3
+    Item: 'Ink_Sack'
+    Data: 0
+    Name: '&f&lBlackScroll'
+    Lore:
+    - '&eCost: $%cost%'
+    PurchaseWithCash: 'true'
+    PurchaseWithXp: 'false'
+    Price: 30000
+    XpCost: 30000
+  TransmogScrolls:
+    Enabled: 'true'
+    Slot: 4
+    Item: 'Paper'
+    Data: 0
+    Name: '&e&lTransmog Scroll'
+    Lore:
+    - '&eCost: $%cost%'
+    PurchaseWithCash: 'true'
+    PurchaseWithXp: 'false'
+    Price: 7500
+    XpCost: 7500
+  ItemNameTags:
+    Enabled: 'true'
+    Slot: 5
+    Item: 'Name_Tag'
+    Data: 0
+    Name: '&6Item Name Tag'
+    Lore:
+    - '&eCost: $%cost%'
+    PurchaseWithCash: 'true'
+    PurchaseWithXp: 'false'
+    Price: 5000
+    XpCost: 5000
+  MysteryMobSpawner:
+    Enabled: 'true'
+    Slot: 6
+    Item: 'Mob_Spawner'
+    Data: 0
+    Name: '&6Mystery Mob Spawner'
+    Lore:
+    - '&eCost: $%cost%'
+    PurchaseWithCash: 'true'
+    PurchaseWithXp: 'false'
+    Price: 500000
+    XpCost: 100000
+  Back:
+    Slot: 9
+    Item: 'Golden_Apple'
+    Data: 1
+    Name: 'Back'
+    Lore:
+    - '&eGo back to the Enchanter Gui'
+Messages:
+  CashWithdraw: '&c&l-$%amount%'
+  ExpRemove: '&c&l-%xp% XP'
+  notEnough: '&c&l(!) &4You do not have enough %type% to purchase this.'

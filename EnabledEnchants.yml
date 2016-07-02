@@ -1,0 +1,108 @@
+# Made by RandomHashTags
+Soul:
+  DivineImmolation: 'false' #Not implemented
+  Immortal: 'false'         #Works without souls
+  NaturesWrath: 'false'     #Works without souls
+Legendary:
+  Barbarian: 'true'
+  BloodLust: 'false'   #Not implemented
+  Clarity: 'false'     #Not implemented
+  CreeperArmor: 'true'
+  Deathbringer: 'true'
+  Devour: 'false'      #Not implemented
+  Disarmor: 'true'
+  Drunk: 'true'
+  Enlighted: 'true'
+  Gears: 'true'
+  Inquisitive: 'true'
+  KillAura: 'false'    #Disabled
+  Lifesteal: 'true'
+  Overload: 'true'
+  Protection: 'true'
+  Rage: 'true'
+Ultimate:
+  Angelic: 'true'
+  Armored: 'true'
+  ArrowLifesteal: 'false'  #Not implemented
+  Bleed: 'false'           #Not implemented
+  Blessed: 'true'
+  Blind: 'true'
+  Cleave: 'true'
+  Demonforged: 'true'
+  Detonate: 'true'
+  Guardians: 'true'
+  Hardened: 'true'
+  Leadership: 'false'     #Not implemented
+  ObsidianShield: 'true'
+  Lucky: 'false'          #Not implemented
+  Piercing: 'false'       #Not implemented
+  Poison: 'true'
+  Shackle: 'false'        #Not implemented
+  Silence: 'true'
+  Spirits: 'true'
+  Venom: 'false'          #Not implemented
+  Wither: 'true'
+Elite:
+  AntiGravity: 'true'
+  Block: 'false'         #Not implemented
+  Cactus: 'true'
+  DoubleStrike: 'true'
+  EnderWalker: 'false'   #Not implemented
+  Execute: 'true'
+  Hellfire: 'true'
+  IceAspect: 'false'     #Not implemented
+  IceFreeze: 'false'     #Not implemented
+  Implants: 'true'
+  Infernal: 'false'      #Not implemented
+  Poisoned: 'false'      #Not implemented
+  Pummel: 'true'
+  RocketEscape: 'true'
+  Shockwave: 'false'     #Not implemented
+  SkillSwipe: 'true'
+  SmokeBomb: 'true'
+  Springs: 'true'
+  Stormcaller: 'true'
+  Tank: 'true'
+  Telepathy: 'true'
+  Teleportation: 'true'
+  Trap: 'false'          #Not implemented
+  UndeadRuse: 'true'
+  Valor: 'true'
+  Vampire: 'true'
+  Voodoo: 'true'
+Unique:
+  Aquatic: 'true'
+  AutoSmelt: 'true'
+  Commander: 'true'
+  Cowification: 'true'
+  Curse: 'true'
+  DeepWounds: 'true'
+  EnderShift: 'true'
+  Experience: 'true'
+  Explosive: 'true'
+  Featherweight: 'true'
+  Frozen: 'true'
+  Molten: 'true'
+  ObsidianDestroyer: 'true'
+  Paralyze: 'false'           #Not implemented
+  PlagueCarrier: 'false'      #Disabled
+  Ragdoll: 'true'
+  Ravenous: 'true'
+  Reforged: 'true'
+  SelfDestruct: 'false'       #Not implemented
+  SpiritLink: 'true'
+  Stormcaller: 'true'
+Simple:
+  Confusion: 'true'
+  Decapitation: 'true'
+  Epicness: 'false'       #Not implemented
+  Glowing: 'true'
+  Haste: 'true'
+  Headless: 'true'
+  Healing: 'true'
+  Insomnia: 'false'       #Not implemented
+  Lightning: 'true'
+  Nutrition: 'false'      #Not implemented
+  Obliterate: 'false'     #Not implemented
+  Oxygenate: 'false'      #Not implemented
+  ThunderingBlow: 'false' #Not implemented

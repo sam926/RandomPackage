@@ -1,0 +1,73 @@
+# Made by RandomHashTags
+MessageOnDiscovery: 'true'
+Obtain: '&7You have obtained a &6&lMystery Mob Spawner!'
+Item: 'mob_spawner'
+Name: '&6&lMystery Mob Spawner'
+Lore:
+- '&7Right-click in hand to reveal one'
+- '&7of the following mob spawner types:'
+- '&7'
+- '&7'
+- '&6&l* &7Endermen'
+- '&6&l* &7Pigzombie'
+- '&6&l* &7Cow'
+- '&6&l* &7Creeper'
+- '&6&l* &7Blaze'
+- '&6&l* &7Iron Golem'
+- '&6&l* &eMooshroom Cow'
+- '&6&l* &eMagma Cube'
+- '&6&l* &eGhast'
+Endermen:
+  DisplayName: '&6&lEnderman &r&7Spawner'
+  Lore:
+  - '&7Lore 1'
+  - '&7Lore 2'
+  DiscoverMessage: '&7You have discovered a &6&lEnderman &r&7Spawner!'
+PigZombie:
+  DisplayName: '&6&lPigZombie &r&7Spawner'
+  Lore:
+  - '&7Lore 1'
+  - '&7Lore 2'
+  DiscoverMessage: '&7You have discovered a &6&lPigZombie &r&7Spawner!'
+Cow:
+  DisplayName: '&6&lCow &r&7Spawner'
+  Lore:
+  - '&7Lore 1' 
+  - '&7Lore 2'
+  DiscoverMessage: '&7You have discovered a &6&lCow &r&7Spawner!'
+Creeper:
+  DisplayName: '&a&lCreeper &r&7Spawner'
+  Lore:
+  - '&7Lore 1'
+  - '&7Lore 2'
+  DiscoverMessage: '&7You have discovered a &a&lCreeper &r&7Spawner!'
+Blaze:
+  DisplayName: '&6&lBlaze &r&7Spawner'
+  Lore:
+  - '&7Lore 1'
+  - '&7Lore 2'
+  DiscoverMessage: '&7You have discovered a &6&lBlaze &r&7Spawner!'
+IronGolem:
+  DisplayName: '&6&lIron Golem &r&7Spawner'
+  Lore:
+  - '&7Lore 1'
+  - '&7Lore 2'
+  DiscoverMessage: '&7You have discovered a &6&lIron Golem &r&7Spawner!'
+MooshroomCow:
+  DisplayName: '&e&lMooshroom Cow &r&7Spawner'
+  Lore:
+  - '&7Lore 1'
+  - '&7Lore 2'
+  DiscoverMessage: '&7You have discovered a &e&lMooshroom Cow &r&7Spawner!'
+MagmaCube:
+  DisplayName: '&e&lMagma Cube &r&7Spawner'
+  Lore:
+  - '&7Lore 1'
+  - '&7Lore 2'
+  DiscoverMessage: '&7You have discovered a &e&lMagma Cube &r&7Spawner!'
+Ghast:
+  DisplayName: '&e&lGhast &r&7Spawner'
+  Lore:
+  - '&7Lore 1'
+  - '&7Lore 2'
+  DiscoverMessage: '&7You have discovered a &e&lGhast &r&7Spawner!'

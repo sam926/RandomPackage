@@ -1,0 +1,47 @@
+name: RandomPackage
+main: me.randomHashTags.randomPackage.Core.RandomPackage
+author: RandomHashTags
+version: 9001
+depend: [Factions, Vault]
+softdepend: [Beast-XpWithDraw]
+load: STARTUP
+commands:
+  randompackage:
+    description: Made by RandomHashTags
+    permission: 'RandomPackage.reload'
+    aliases: [rp]
+  gkit:
+    description: Opens the Gkit gui
+    permission: 'RandomPackage.gkit'
+    aliases: [gkits]
+  alchemist:
+    description: Opens the Alchemist gui
+    permission: 'RandomPackage.alchemist'
+  enchanter:
+    description: Opens the Enchanter gui
+    permission: 'RandomPackage.enchanter'
+  tinkerer:
+    description: Opens the Tinkerer gui
+    permission: 'RandomPackage.tinkerer'
+  splitsouls:
+    description: Splits your souls harvested into a gem
+    permission: 'RandomPackage.splitsouls'
+    aliases: [splitsoul]
+  levelCap:
+    description: Checks how many custom enchants you can have on an item
+    permission: 'RandomPackage.levelcap'
+    aliases: [lc]
+  kitop:
+    description: Gets an op kit, with op Enchants!
+    permission: 'RandomPackage.kitop'
+  givedp:
+    description: Give or get a custom RandomPackage item
+    permission: 'RandomPackage.givedp'
+  randomEnchantBooks:
+    description: Gets a Legendary, Ultimate, Elite, Unique, or Simple book!
+    permission: 'RandomPackage.enchantbooks'
+    aliases: [randomenchantbooks, reb]
+  randomBookGui:
+    description: Opens a Gui with the plugins custom books
+    permission: 'RandomPackage.randombookgui'
+    aliases: [rbg]

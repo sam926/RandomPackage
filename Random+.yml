@@ -1,0 +1,511 @@
+# Made by RandomHashTags
+Bosses:
+  KingSlime:
+    SummonMessage: '&e&lKing Slime>> &f&oAh, so you are %playerName%, the infamous slime killer. Prepare to meet your doom!'
+    Name: '&e&lKing Slime'
+    Lore:
+    - '&7This monster egg contains a'
+    - '&c&ndangerous&r &7warzone boss'
+    - ' '
+    - '&e&lLORE'
+    - '&7&oAn enormous slime, rumored to be'
+    - '&7&othe king of all slimes in the'
+    - '&7&oServer. Apparently he has anger'
+    - '&7&oissues'
+    - ' '
+    - '&e&lDIFFUCULTY'
+    - '&eUltimate'
+    BroadcastMessage:
+    - ' '
+    - '&b&lA &6&lKING SLIME &b&lHAS BEEN SUMMONED AT &c%coords%'
+    - ' '
+Trade:
+  ChestName: '%accepter%         %sender%'
+  ChestSize: 54
+  AcceptPane:
+    Color: 14
+    Name: '&eClick to ACCEPT Trade'
+    Lore: ' '
+  TimeoutDelay: 10
+  Messages:
+    Usage: '&9Random+>> &7/trade &e<player>'
+    TooManyArgs: '&9Random>> &7/trade &e<player>'
+    SendTradeRequest: '&6&l(!) &6You''ve send a trade request to &6%target%'
+    RecieveTrade1: '&6&l(!) &6You''ve revieved a trade from &6%sender%'
+    RecieveTrade2: '&7Type &e/trade &6%sender% &7to accept the trade'
+    PlayerIsOffline: '&9Random+>> &7Player doesn''t exist or is offline'
+    TradeAccepted: '&a&lTrade Accepted'
+    TradeCancelled: '&c&lTrade Cancelled'
+ExplosiveCake:
+  DisplayName: '&f&lExplosive Cake &r&7(Right Click)'
+  Lore1: '&7Really? Have you not seen an'
+  Lore2: '&7&nEXPLODING &r&7cake before?!'
+  Messages:
+    Obtain: '&7You obtained a &f&lExplosive Cake!'
+    ObtainFromPlayerOrConsole: '&7You obtained a &f&lExplosive Cake &r&7from &6%giver%!'
+ExplosiveSnowballs:
+  DisplayName: '&b&lExplosive Snowball &r&7(Right Click)'
+  Lore1: '&7Yes, this is a snowball with TNT inside.'
+  Lore2: '&7Seriously, Happy Holidays!'
+  Messages:
+    Obtain: '&7You obtained a &b&lExplosive Snowball!'
+    ObtainFromPlayerOrConsole: '&7You obtained a &b&lExplosive Snowball &r&7from &6%giver%!'
+TitleOptions:
+  ChatFormat: '%playerCustomName% %title% %message%'
+  RandomHashTags:
+    ItemName: '&b&lTITLE "&fRandomHashTags&b&l"'
+    ItemLore1: '&7Right-click this item to unlock'
+    ItemLore2: '&7the RandomHashTags title on this server'
+    ChatSuffix: '&8&l[&cRandomHashTags&8&l]'
+    Messages:
+      Apply1: '&b&l(!) You have UNLOCKED the "&fRandomHashTags&b&l" title!'
+      Apply2: '&7Equip your new title in the /title menu!'
+  Poofless:
+    ItemName: '&b&lTITLE "&fPoofless&b&l"'
+    ItemLore1: '&7Right-click this item to unlock'
+    ItemLore2: '&7the Poofless title on this server'
+    ChatSuffix: '&8&l[&6Poofless&8&l]'
+    Messages:
+      Apply1: '&b&l(!) You have UNLOCKED the "&fPoofless&b&l" title!'
+      Apply2: '&7Equip your new title in the /title menu!'
+gkitOptions:
+  Slots: 27
+  Name: '&0&l&ngkits'
+  Kit1:
+    Slot: 0
+    Gui:
+      Item: 'Pumpkin'
+      Name: '&c&lPumpkin'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'diamond_helmet'
+      Name: '&b&lDiamond Helmet'
+      Amount: 1
+      Enchant1: 0
+      Enchant1Level: 4
+      Enchant2: 34
+      Enchant2Level: 3
+      Lore1: '%randomArmor%'
+      Lore2: '%randomArmor%'
+      Lore3: '%randomHelmet%'
+    Item2:
+      Item: 'diamond_chestplate'
+      Name: '&b&lDiamond Chestplate'
+      Amount: 1
+      Lore1: '%randomArmor%'
+      Lore2: '%randomChestplate%'
+      Lore3: '%randomChestplate%'
+  Kit2:
+    Slot: 1
+    Gui:
+      Item: 'Feather'
+      Name: '&c&lFeather'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit3:
+    Slot: 2
+    Gui:
+      Item: 'Blaze_powder'
+      Name: '&c&lBlaze Powder'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit4:
+    Slot: 3
+    Gui:
+      Item: 'Eye_of_ender'
+      Name: '&c&lEye Of Ender'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit5:
+    Slot: 4
+    Gui:
+      Item: 'ender_portal_frame'
+      Name: '&c&lEye Of Ender'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit6:
+    Slot: 5
+    Gui:
+      Item: 'red_rose'
+      Name: '&c&lRed Rose'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit7:
+    Slot: 6
+    Gui:
+      Item: 'enchantment_table'
+      Name: '&c&lEnchantment table'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit8:
+    Slot: 7
+    Gui:
+      Item: 'Diamond_sword'
+      Name: '&c&lDiamond Sword'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit9:
+    Slot: 8
+    Gui:
+      Item: 'Apple'
+      Name: '&c&lApple'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit10:
+    Slot: 9
+    Gui:
+      Item: 'Golden_apple'
+      Name: '&c&lGolden Apple'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit11:
+    Slot: 10
+    Gui:
+      Item: 'Iron_axe'
+      Name: '&c&lIron Axe'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit12:
+    Slot: 11
+    Gui:
+      Item: 'Brewing_stand_item'
+      Name: '&c&lBrewing Stand'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit13:
+    Slot: 12
+    Gui:
+      Item: 'Nether_star'
+      Name: '&c&lNether Star'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit14:
+    Slot: 13
+    Gui:
+      Item: 'cake'
+      Name: '&c&lCake'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit15:
+    Slot: 14
+    Gui:
+      Item: 'book'
+      Name: '&c&lBook'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit16:
+    Slot: 15
+    Gui:
+      Item: 'Exp_bottle'
+      Name: '&c&lExperience Bottle'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit17:
+    Slot: 16
+    Gui:
+      Item: 'Ender_pearl'
+      Name: '&c&lEnder Pearl'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit18:
+    Slot: 17
+    Gui:
+      Item: 'Diamond_pickaxe'
+      Name: '&c&lDiamond Pickaxe'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit19:
+    Slot: 18
+    Gui:
+      Item: 'air'
+      Amount: 1
+  Kit20:
+    Slot: 19
+    Gui:
+      Item: 'air'
+      Amount: 1
+  Kit21:
+    Slot: 20
+    Gui:
+      Item: 'Diamond'
+      Name: '&c&lDiamond'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit22:
+    Slot: 21
+    Gui:
+      Item: 'Firework'
+      Name: '&c&lFirework'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit23:
+    Slot: 22
+    Gui:
+      Item: 'raw_beef'
+      Name: '&c&lRaw Beef'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit24:
+    Slot: 23
+    Gui:
+      Item: 'tnt'
+      Name: '&c&lTNT'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit25:
+    Slot: 24
+    Gui:
+      Item: 'diamond_chestplate'
+      Name: '&c&lDiamond Chestplate'
+      Amount: 1
+      Lore1: '&6testing 1'
+      Lore2: '&btesting 2'
+      Lore3: '&atesting 3'
+    Item1:
+      Item: 'gold_helmet'
+      Name: '&e&lGold Helmet'
+      Amount: 1
+      Lore1: '%randomHelmet%'
+      Lore2: '%randomHelmet%'
+      Lore3: '%randomArmor%'
+  Kit26:
+    Slot: 25
+    Gui:
+      Item: 'air'
+      Amount: 1
+  Kit27:
+    Slot: 26
+    Gui:
+      Item: 'air'
+      Amount: 1
+KitPermissions:
+  Available: '&a&lUNLOCKED'
+  Unavailable: '&c&lLOCKED'
+KitDelay:
+  DelayOptions:
+    Item: 'stained_glass_pane'
+    Amount: 1
+    Color: 4
+    DisplayName: ' '
+    Lore1: ' '
+    Lore2: '&cKit is available every %time%'
+  Message: '&e&lYou can obtain this kit every %time%!'
+  Kit1: 1
+  Kit2: 2
+  Kit3: 3
+  Kit4: 4
+  Kit5: 5
+  Kit6: 6
+  Kit7: 7
+  Kit8: 8
+  Kit9: 9
+  Kit10: 10
+  Kit11: 11
+  Kit12: 12
+  Kit13: 13
+  Kit14: 14
+  Kit15: 15
+  Kit16: 16
+  Kit17: 17
+  Kit18: 18
+  Kit19: 19
+  Kit20: 60
+  Kit21: 120
+  Kit22: 180
+  Kit23: 240
+  Kit24: 3600
+  Kit25: 172800
+  Kit26: 26
+  Kit27: 27

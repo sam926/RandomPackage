@@ -1,0 +1,47 @@
+# Made by RandomHashTags
+WhiteScrolls:
+  Item: 'Empty_Map'
+  Name: '&e&nWhite Scroll'
+  Lore:
+  - '&fPrevents an item from being destroyed'
+  - '&fdue to a failed Enchantment Book.'
+  - '&ePlace scroll on item to apply.'
+  Messages:
+    GaveWhiteScroll: '&6You &7gave &e%targetPlayer% &7 a &e&nWhite Scroll!'
+    RecievedWhiteScroll: '&7You obtained a &e&nWhite Scroll &7from &6%giver%!'
+BlackScrolls:
+  Item: 'Ink_sack'
+  Name: '&f&lBlack Scroll'
+  Lore:
+  - '&7Removes a random enchantment'
+  - '&7from an item and converts'
+# Leave this line alone. If you move the %percent%, it will not work
+  - '&7it into a &f%percent%% &7success book.'
+  - '&fPlace scroll on item to extract.'
+TransmogScrolls:
+  Item: 'Paper'
+  Name: '&e&lTransmog Scroll'
+  ApplyCount: '&9&l[&b&n%loreCount%&9&l]'
+  Lore:
+  - '&7Organizes enchants by &e&nrarity&r &7on item'
+  - '&7and adds the &blore &acount &7to name'
+  - ' '
+  - '&e&oPlace scroll on item to apply'
+  Messages:
+    Success: '&9RandomPackage> &aYou successfully renamed your item to %name%'
+ItemNameTags:
+  Item: 'Name_Tag'
+  Name: '&6&lItem NameTag &7(Right Click)'
+  Lore:
+  - '&7Rename and customize your equipment'
+  Messages:
+    # %name% = What the player said in chat, to name their item in hand
+    Success: '&9RandomPackage> &aYou have successfully renamed your item to %name%'
+    Activate: '&e&l(!) &eYour next message will rename your item in hand'
+    CannotRenameItem: '&9RandomPackage> &cYou cannot rename this item'
+    CannotRenameAir: '&9RandomPackage> &cYou need to be holding a item to do this'
+Messages:
+  WhiteScrollsObtain: '&7You obtained a &e&nWhite Scroll!'
+  BlackScrollsObtain: '&7You obtained a &f&lBlack Scroll!'
+  TransmogScrollsObtain: '&7You obtained a &e&lTransmog Scroll!'
+  ItemNameTagsObtain: '&7You obtained a &6&lItem NameTag!'

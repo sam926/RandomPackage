@@ -1,0 +1,71 @@
+# Made by RandomHashTags
+# When you have a custom book, and you reveal the enchant, this item is the result
+DiscoverItem: 'Book'
+Soul:
+  Item: 'Book'
+  Name: '&c&lSoul Enchantment Book &7(Right Click)'
+  Lore:
+  - '&7Examine to receive a random'
+  - '&csoul &7enchantment book.'
+  DiscoverMessage:
+  - '&e&l(!) &eYou examine the &c&lSoul Enchantment Book...'
+  - '&eand discovered %soulbook%'
+Legendary:
+  Item: 'Book'
+  Name: '&6&lLegendary Enchantment Book &7(Right Click)'
+  Lore:
+  - '&7Examine to receive a random'
+  - '&6legendary &7enchantment book.'
+  DiscoverMessage:
+  - '&e&l(!) &eYou examine the &6&lLegendary Enchantment Book...'
+  - '&eand discovered %legendarybook%'
+Ultimate:
+  Item: 'Book'
+  Name: '&e&lUltimate Enchantment Book &7(Right Click)'
+  Lore:
+  - '&7Examine to receive a random'
+  - '&eultimate &7enchantment book.'
+  DiscoverMessage:
+  - '&e&l(!) &eYou examine the &e&lUltimate Enchantment Book...'
+  - '&eand discovered %ultimatebook%'
+Elite:
+  Item: 'Book'
+  Name: '&b&lElite Enchantment Book &7(Right Click)'
+  Lore:
+  - '&7Examine to receive a random'
+  - '&belite &7enchantment book.'
+  DiscoverMessage:
+  - '&e&l(!) &eYou examine the &b&lElite Enchantment Book...'
+  - '&eand discovered %elitebook%'
+Unique:
+  Item: 'Book'
+  Name: '&a&lUnique Enchantment Book &7(Right Click)'
+  Lore:
+  - '&7Examine to receive a random'
+  - '&aunique &7enchantment book.'
+  DiscoverMessage:
+  - '&e&l(!) &eYou examine the &a&lUnique Enchantment Book...'
+  - '&eand discovered %uniquebook%'
+Simple:
+  Item: 'Book'
+  Name: '&7&lSimple Enchantment Book &7(Right Click)'
+  Lore:
+  - '&7Examine to receive a random'
+  - '&7simple &7enchantment book.'
+  DiscoverMessage:
+  - '&e&l(!) &eYou examine the &7&lSimple Enchantment Book...'
+  - '&eand discovered %simplebook%'
+Messages:
+  ObtainSimple: '&7You obtained a &lSimple Enchantment Book!'
+  ObtainUnique: '&7You obtained a &a&lUnique Enchantment Book!'
+  ObtainElite: '&7You obtained a &b&lElite Enchantment Book!'
+  ObtainUltimate: '&7You obtained a &e&lUltimate Enchantment Book!'
+  ObtainLegendary: '&7You obtained a &6&lLegendary Enchantment Book!'
+  ObtainSoul: '&7You obtained a &c&lSoul Enchantment Book!'
+  # /givedp <player> <item>
+  SendSimple: '&7You gave %player% a &lSimple Enchantment Book!'
+  SendUnique: '&7You gave %player% a &a&lUnique Enchantment Book!'
+  SendElite: '&7You gave %player% a &b&lElite Enchantment Book!'
+  SendUltimate: '&7You gave %player% a &e&lUltimate Enchantment Book!'
+  SendLegendary: '&7You gave %player% a &6&lLegendary Enchantment Book!'
+  SendSoul: '&7You gave %player% a 7c&lSoul Enchantment Book!'

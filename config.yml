@@ -1,0 +1,1686 @@
+#Made by RandomHashTags from SpigotMC! ALL RIGHTS RESERVED
+KillAuraMessage: '&e&l*** KILLED %amount% ***'
+GuardiansName: '&e%player%&9''s Guardian'
+SpiritsName: '&e%player%&9''s Spirit'
+UndeadRuseName: '&e%player%&9''s Undead Zombie'
+BarbarianCriticalMessage: '&e&l** CRITICAL HIT **'
+#
+Enchantments:
+  Soul:
+    DivineImmolation:
+      BookLore:
+      - '&eActivate Soul Enchantment. Your weapons'
+      - '&eare imbued with divine fire, turning'
+      - '&eall your physical attacks into Area'
+      - '&eof Effect spells and igniting divine'
+      - '&efire upon all nearby enemies. Costs 1'
+      - '&esoul per second.'
+      DivineImmolation1:
+        BookName: '&c&l&nDivine Immolation I'
+        ItemLore: '&cDivine Immolation I'
+      DivineImmolation2:
+        BookName: '&c&l&nDivine Immolation II'
+        ItemLore: '&cDivine Immolation II'
+      DivineImmolation3:
+        BookName: '&c&l&nDivine Immolation III'
+        ItemLore: '&cDivine Immolation III'
+      DivineImmolation4:
+        BookName: '&c&l&nDivine Immolation IV'
+        ItemLore: '&cDivine Immolation IV'
+    Immortal:
+      Immortal1:
+        BookName: '&c&l&nImmortal I'
+        BookLore1: '&ePassive Soul Enchantment. While'
+        BookLore2: '&eSoul Mode is not enabled, this'
+        BookLore3: '&eenchant will protect your gear''s'
+        BookLore4: '&edurability. Cost 4 souls'
+        BookLore5: '&eper durability loss'
+        ItemLore: '&cImmortal I'
+      Immortal2:
+        BookName: '&c&l&nImmortal II'
+        BookLore1: '&ePassive Soul Enchantment. While'
+        BookLore2: '&eSoul Mode is not enabled, this'
+        BookLore3: '&eenchant will protect your gear''s'
+        BookLore4: '&edurability. Cost 3 souls'
+        BookLore5: '&eper durability loss'
+        ItemLore: '&cImmortal II'
+      Immortal3:
+        BookName: '&c&l&nImmortal III'
+        BookLore1: '&ePassive Soul Enchantment. While'
+        BookLore2: '&eSoul Mode is not enabled, this'
+        BookLore3: '&eenchant will protect your gear''s'
+        BookLore4: '&edurability. Cost 2 souls'
+        BookLore5: '&eper durability loss'
+        ItemLore: '&cImmortal III'
+      Immortal4:
+        BookName: '&c&l&nImmortal IV'
+        BookLore1: '&ePassive Soul Enchantment. While'
+        BookLore2: '&eSoul Mode is not enabled, this'
+        BookLore3: '&eenchant will protect your gear''s'
+        BookLore4: '&edurability. Cost 1 soul'
+        BookLore5: '&eper durability loss'
+        ItemLore: '&cImmortal IV'
+    NaturesWrath:
+      BookLore:
+      - '&ePassive Soul Enchantment. Temporarity'
+      - '&efreezes all enemies in a massive area'
+      - '&earound you, pushing them back and'
+      - '&edealing massive nature damage. Costs'
+      - '&e25 souls per use'
+      NaturesWrath1:
+        BookName: '&c&l&nNatures Wrath I'
+        ItemLore: '&cNatures Wrath I'
+      NaturesWrath2:
+        BookName: '&c&l&nNatures Wrath II'
+        ItemLore: '&cNatures Wrath II'
+      NaturesWrath3:
+        BookName: '&c&l&nNatures Wrath III'
+        ItemLore: '&cNatures Wrath III'
+      NaturesWrath4:
+        BookName: '&c&l&nNatures Wrath IV'
+        ItemLore: '&cNatures Wrath IV'
+  Legendary:
+    Barbarian:
+      BookLore:
+      - '&eInflicts more axe damage'
+      Barbarian1:
+        BookName: '&6&l&nBarbarian I'
+        ItemLore: '&6Barbarian I'
+      Barbarian2:
+        BookName: '&6&l&nBarbarian II'
+        ItemLore: '&6Barbarian II'
+      Barbarian3:
+        BookName: '&6&l&nBarbarian III'
+        ItemLore: '&6Barbarian III'
+      Barbarian4:
+        BookName: '&6&l&nBarbarian IV'
+        ItemLore: '&6Barbarian IV'
+    BloodLust:
+      BookLore:
+      - '&eHeals you whenever an enemy player'
+      - '&eis damaged by the Bleed enchantment'
+      BloodLust1:
+        BookName: '&6&l&nBlood Lust I'
+        ItemLore: '&6Blood Lust I'
+      BloodLust2:
+        BookName: '&6&l&nBlood Lust II'
+        ItemLore: '&6Blood Lust II'
+      BloodLust3:
+        BookName: '&6&l&nBlood Lust III'
+        ItemLore: '&6Blood Lust III'
+      BloodLust4:
+        BookName: '&6&l&nBlood Lust IV'
+        ItemLore: '&6Blood Lust IV'
+      BloodLust5:
+        BookName: '&6&l&nBlood Lust V'
+        ItemLore: '&6Blood Lust V'
+      BloodLust6:
+        BookName: '&6&l&nBlood Lust VI'
+        ItemLore: '&6Blood Lust VI'
+    Clarity:
+      BookLore:
+      - '&eImmune to Blindness up to'
+      - '&ethe level of Clarity'
+      Clarity1:
+        BookName: '&6&l&nClarity I'
+        ItemLore: '&6Clarity I'
+      Clarity2:
+        BookName: '&6&l&nClarity II'
+        ItemLore: '&6Clarity II'
+      Clarity3:
+        BookName: '&6&l&nClarity III'
+        ItemLore: '&6Clarity III'
+    CreeperArmor:
+      BookLore:
+      - '&eNo knockback, and reduced'
+      - '&edamage from explosions'
+      CreeperArmor1:
+        BookName: '&6&l&nCreeper Armor I'
+        ItemLore: '&6Creeper Armor I'
+      CreeperArmor2:
+        BookName: '&6&l&nCreeper Armor III'
+        ItemLore: '&6Creeper Armor III'
+      CreeperArmor3:
+        BookName: '&6&l&nCreeper Armor III'
+        ItemLore: '&6Creeper Armor III'
+    Deathbringer:
+      BookLore:
+      - '&eChance to deal double damage'
+      Deathbringer1:
+        BookName: '&6&l&nDeathbringer I'
+        ItemLore: '&6Deathbringer I'
+      Deathbringer2:
+        BookName: '&6&l&nDeathbringer II'
+        ItemLore: '&6Deathbringer II'
+      Deathbringer3:
+        BookName: '&6&l&nDeathbringer III'
+        ItemLore: '&6Deathbringer III'
+    Devour:
+      BookLore:
+      - '&eThe more Bleed stacks on your enemy,'
+      - '&ethe more damage done per strike'
+      Devour1:
+        BookName: '&6&l&nDevour I'
+        ItemLore: '&6Devour I'
+      Devour2:
+        BookName: '&6&l&nDevour II'
+        ItemLore: '&6Devour II'
+      Devour3:
+        BookName: '&6&l&nDevour III'
+        ItemLore: '&6Devour III'
+      Devour4:
+        BookName: '&6&l&nDevour IV'
+        ItemLore: '&6Devour IV'
+    Disarmor:
+      BookLore:
+      - '&eHas a chance of removing a'
+      - '&earmor piece from your enemy'
+      Message: '&c&l(!) &r&eYour &3%armorPiece% &ehas been &cDisarmored!'
+      Disarmor1:
+        BookName: '&6&l&nDisarmor I'
+        ItemLore: '&6Disarmor I'
+      Disarmor2:
+        BookName: '&6&l&nDisarmor II'
+        ItemLore: '&6Disarmor II'
+      Disarmor3:
+        BookName: '&6&l&nDisarmor III'
+        ItemLore: '&6Disarmor III'
+      Disarmor4:
+        BookName: '&6&l&nDisarmor IV'
+        ItemLore: '&6Disarmor IV'
+      Disarmor5:
+        BookName: '&6&l&nDisarmor V'
+        ItemLore: '&6Disarmor V'
+      Disarmor6:
+        BookName: '&6&l&nDisarmor VI'
+        ItemLore: '&6Disarmor VI'
+      Disarmor7:
+        BookName: '&6&l&nDisarmor VII'
+        ItemLore: '&6Disarmor VII'
+      Disarmor8:
+        BookName: '&6&l&nDisarmor VIII'
+        ItemLore: '&6Disarmor VIII'
+    Drunk:
+      BookLore:
+      - '&eGives Strength and Slowness'
+      - '&ebased on Drunk level'
+      Drunk1:
+        BookName: '&6&l&nDrunk I'
+        ItemLore: '&6Drunk I'
+      Drunk2:
+        BookName: '&6&l&nDrunk II'
+        ItemLore: '&6Drunk II'
+      Drunk3:
+        BookName: '&6&l&nDrunk III'
+        ItemLore: '&6Drunk III'
+      Drunk4:
+        BookName: '&6&l&nDrunk IV'
+        ItemLore: '&6Drunk IV'
+    Enlighted:
+      BookLore:
+      - '&eCan heal you while taking damage'
+      Enlighted1:
+        BookName: '&6&l&nEnlighted I'
+        ItemLore: '&6Enlighted I'
+      Enlighted2:
+        BookName: '&6&l&nEnlighted II'
+        ItemLore: '&6Enlighted II'
+      Enlighted3:
+        BookName: '&6&l&nEnlighted III'
+        ItemLore: '&6Enlighted III'
+    Gears:
+      BookLore:
+      - '&ePermanent Speed Boost'
+      Gears1:
+        BookName: '&6&l&nGears I'
+        ItemLore: '&6Gears I'
+      Gears2:
+        BookName: '&6&l&nGears II'
+        ItemLore: '&6Gears II'
+      Gears3:
+        BookName: '&6&l&nGears III'
+        ItemLore: '&6Gears III'
+    Inquisitive:
+      BookLore:
+      - '&eIncreases EXP drops from mobs'
+      Inquisitive1:
+        BookName: '&6&l&nInquisitive I'
+        ItemLore: '&6Inquisitive I'
+      Inquisitive2:
+        BookName: '&6&l&nInquisitive II'
+        ItemLore: '&6Inquisitive II'
+      Inquisitive3:
+        BookName: '&6&l&nInquisitive III'
+        ItemLore: '&6Inquisitive III'
+      Inquisitive4:
+        BookName: '&6&l&nInquisitive IV'
+        ItemLore: '&6Inquisitive IV'
+    KillAura:
+      BookLore:
+      - '&eKills the same nearby 2/3 mobs'
+      KillAura1:
+        BookName: '&6&l&nKill Aura I'
+        ItemLore: '&6Kill Aura I'
+      KillAura2:
+        BookName: '&6&l&nKill Aura II'
+        ItemLore: '&6Kill Aura II'
+      KillAura3:
+        BookName: '&6&l&nKill Aura III'
+        ItemLore: '&6Kill Aura III'
+      KillAura4:
+        BookName: '&6&l&nKill Aura IV'
+        ItemLore: '&6Kill Aura IV'
+      KillAura5:
+        BookName: '&6&l&nKill Aura V'
+        ItemLore: '&6Kill Aura V'
+    Lifesteal:
+      BookLore:
+      - '&eSteals hearts from your enemy'
+      - '&ebased on the Lifesteal level'
+      Lifesteal1:
+        BookName: '&6&l&nLifesteal I'
+        ItemLore: '&6Lifesteal I'
+      Lifesteal2:
+        BookName: '&6&l&nLifesteal II'
+        ItemLore: '&6Lifesteal II'
+      Lifesteal3:
+        BookName: '&6&l&nLifesteal III'
+        ItemLore: '&6Lifesteal III'
+      Lifesteal4:
+        BookName: '&6&l&nLifesteal IV'
+        ItemLore: '&6Lifesteal IV'
+      Lifesteal5:
+        BookName: '&6&l&nLifesteal V'
+        ItemLore: '&6Lifesteal V'
+    Overload:
+      BookLore:
+      - '&eGains 2x the Overload level'
+      - '&eof extra hearts'
+      Overload1:
+        BookName: '&6&l&nOverload I'
+        ItemLore: '&6Overload I'
+      Overload2:
+        BookName: '&6&l&nOverload II'
+        ItemLore: '&6Overload II'
+      Overload3:
+        BookName: '&6&l&nOverload III'
+        ItemLore: '&6Overload III'
+    Protection:
+      BookLore:
+      - '&eGive nearby allies a health boost'
+      - '&ebased on enchant level'
+      Protection1:
+        BookName: '&6&l&nProtection I'
+        ItemLore: '&6Protection I'
+      Protection2:
+        BookName: '&6&l&nProtection II'
+        ItemLore: '&6Protection II'
+      Protection3:
+        BookName: '&6&l&nProtection III'
+        ItemLore: '&6Protection III'
+      Protection4:
+        BookName: '&6&l&nProtection IV'
+        ItemLore: '&6Protection IV'
+      Protection5:
+        BookName: '&6&l&nProtection V'
+        ItemLore: '&6Protection V'
+    Rage:
+      BookLore:
+      - '&eContinuous hits multiplies damage dealt'
+      Rage1:
+        BookName: '&6&l&nRage I'
+        ItemLore: '&6Rage I'
+      Rage2:
+        BookName: '&6&l&nRage II'
+        ItemLore: '&6Rage II'
+      Rage3:
+        BookName: '&6&l&nRage III'
+        ItemLore: '&6Rage III'
+      Rage4:
+        BookName: '&6&l&nRage IV'
+        ItemLore: '&6Rage IV'
+      Rage5:
+        BookName: '&6&l&nRage V'
+        ItemLore: '&6Rage V'
+      Rage6:
+        BookName: '&6&l&nRage VI'
+        ItemLore: '&6Rage VI'
+  Ultimate:
+    Angelic:
+      BookLore:
+      - '&eWhen wearing this enchant, when it'
+      - '&eprocs, the level of regen depends on'
+      - '&eall your armor''s Angelic levels'
+      Angelic1:
+        BookName: '&e&l&nAngelic I'
+        ItemLore: '&eAngelic I'
+      Angelic2:
+        BookName: '&e&l&nAngelic II'
+        ItemLore: '&eAngelic II'
+      Angelic3:
+        BookName: '&e&l&nAngelic III'
+        ItemLore: '&eAngelic III'
+      Angelic4:
+        BookName: '&e&l&nAngelic IV'
+        ItemLore: '&eAngelic IV'
+      Angelic5:
+        BookName: '&e&l&nAngelic V'
+        ItemLore: '&eAngelic V'
+    Armored:
+      BookLore:
+      - '&eChance to gain resistance when pvping'
+      Armored1:
+        BookName: '&e&l&nArmored I'
+        ItemLore: '&eArmored I'
+      Armored2:
+        BookName: '&e&l&nArmored II'
+        ItemLore: '&eArmored II'
+      Armored3:
+        BookName: '&e&l&nArmored III'
+        ItemLore: '&eArmored III'
+      Armored4:
+        BookName: '&e&l&nArmored IV'
+        ItemLore: '&eArmored IV'
+    ArrowLifesteal:
+      BookLore:
+      - '&e'
+      ArrowLifesteal1:
+        BookName: '&e&l&nArrow Lifesteal I'
+        ItemLore: '&eArrow Lifesteal I'
+      ArrowLifesteal2:
+        BookName: '&e&l&nArrow Lifesteal II'
+        ItemLore: '&eArrow Lifesteal II'
+      ArrowLifesteal3:
+        BookName: '&e&l&nArrow Lifesteal III'
+        ItemLore: '&eArrow Lifesteal III'
+      ArrowLifesteal4:
+        BookName: '&e&l&nArrow Lifesteal IV'
+        ItemLore: '&eArrow Lifesteal IV'
+      ArrowLifesteal5:
+        BookName: '&e&l&nArrow Lifesteal V'
+        ItemLore: '&eArrow Lifesteal V'
+    Bleed:
+      BookLore:
+      - '&e'
+      Bleed1:
+        BookName: '&e&l&nBleed I'
+        ItemLore: '&eBleed I'
+      Bleed2:
+        BookName: '&e&l&nBleed II'
+        ItemLore: '&eBleed II'
+      Bleed3:
+        BookName: '&e&l&nBleed III'
+        ItemLore: '&eBleed III'
+      Bleed4:
+        BookName: '&e&l&nBleed IV'
+        ItemLore: '&eBleed IV'
+      Bleed5:
+        BookName: '&e&l&nBleed V'
+        ItemLore: '&eBleed V'
+      Bleed6:
+        BookName: '&e&l&nBleed VI'
+        ItemLore: '&eBleed VI'
+    Blessed:
+      BookLore:
+      - '&eChance to remove negative potion effects'
+      Blessed1:
+        BookName: '&e&l&nBlessed I'
+        ItemLore: '&eBlessed I'
+      Blessed2:
+        BookName: '&e&l&nBlessed II'
+        ItemLore: '&eBlessed II'
+      Blessed3:
+        BookName: '&e&l&nBlessed III'
+        ItemLore: '&eBlessed III'
+    Blind:
+      BookLore:
+      - '&eBlinds your enemy'
+      Blind1:
+        BookName: '&e&l&nBlind I'
+        ItemLore: '&eBlind I'
+      Blind2:
+        BookName: '&e&l&nBlind II'
+        ItemLore: '&eBlind II'
+      Blind3:
+        BookName: '&e&l&nBlind III'
+        ItemLore: '&eBlind III'
+    Cleave:
+      BookLore:
+      - '&eDamages players within a radius that'
+      - '&eincreases with the level of enchant'
+      Cleave1:
+        BookName: '&e&l&nCleave I'
+        ItemLore: '&eCleave I'
+      Cleave2:
+        BookName: '&e&l&nCleave II'
+        ItemLore: '&eCleave II'
+      Cleave3:
+        BookName: '&e&l&nCleave III'
+        ItemLore: '&eCleave III'
+      Cleave4:
+        BookName: '&e&l&nCleave IV'
+        ItemLore: '&eCleave IV'
+      Cleave5:
+        BookName: '&e&l&nCleave V'
+        ItemLore: '&eCleave V'
+      Cleave6:
+        BookName: '&e&l&nCleave VI'
+        ItemLore: '&eCleave VI'
+      Cleave7:
+        BookName: '&e&l&nCleave VII'
+        ItemLore: '&eCleave VII'
+    Demonforged:
+      BookLore:
+      - '&eDamages your enemies durability faster'
+      Demonforged1:
+        BookName: '&e&l&nDemonforged I'
+        ItemLore: '&eDemonforged I'
+      Demonforged2:
+        BookName: '&e&l&nDemonforged II'
+        ItemLore: '&eDemonforged II'
+      Demonforged3:
+        BookName: '&e&l&nDemonforged III'
+        ItemLore: '&eDemonforged III'
+      Demonforged4:
+        BookName: '&e&l&nDemonforged IV'
+        ItemLore: '&eDemonforged IV'
+    Detonate:
+      BookLore:
+      - '&eExplosive when mining'
+      Detonate1:
+        BookName: '&e&l&nDetonate I'
+        ItemLore: '&eDetonate I'
+      Detonate2:
+        BookName: '&e&l&nDetonate II'
+        ItemLore: '&eDetonate II'
+      Detonate3:
+        BookName: '&e&l&nDetonate III'
+        ItemLore: '&eDetonate III'
+      Detonate4:
+        BookName: '&e&l&nDetonate IV'
+        ItemLore: '&eDetonate IV'
+      Detonate5:
+        BookName: '&e&l&nDetonate V'
+        ItemLore: '&eDetonate V'
+      Detonate6:
+        BookName: '&e&l&nDetonate VI'
+        ItemLore: '&eDetonate VI'
+      Detonate7:
+        BookName: '&e&l&nDetonate VII'
+        ItemLore: '&eDetonate VII'
+      Detonate8:
+        BookName: '&e&l&nDetonate VIII'
+        ItemLore: '&eDetonate VIII'
+      Detonate9:
+        BookName: '&e&l&nDetonate IX'
+        ItemLore: '&eDetonate IX'
+    Guardians:
+      BookLore:
+      - '&eSummons a IG to attack your enemy'
+      Guardians1:
+        BookName: '&e&l&nGuardians I'
+        ItemLore: '&eGuardians I'
+      Guardians2:
+        BookName: '&e&l&nGuardians II'
+        ItemLore: '&eGuardians II'
+      Guardians3:
+        BookName: '&e&l&nGuardians III'
+        ItemLore: '&eGuardians III'
+      Guardians4:
+        BookName: '&e&l&nGuardians IV'
+        ItemLore: '&eGuardians IV'
+      Guardians5:
+        BookName: '&e&l&nGuardians V'
+        ItemLore: '&eGuardians V'
+      Guardians6:
+        BookName: '&e&l&nGuardians VI'
+        ItemLore: '&eGuardians VI'
+      Guardians7:
+        BookName: '&e&l&nGuardians VII'
+        ItemLore: '&eGuardians VII'
+      Guardians8:
+        BookName: '&e&l&nGuardians VIII'
+        ItemLore: '&eGuardians VIII'
+      Guardians9:
+        BookName: '&e&l&nGuardians IX'
+        ItemLore: '&eGuardians IX'
+      Guardians10:
+        BookName: '&e&l&nGuardians X'
+        ItemLore: '&eGuardians X'
+    Hardened:
+      BookLore:
+      - '&eArmor takes less durability damage'
+      Hardened1:
+        BookName: '&e&l&nHardened I'
+        ItemLore: '&eHardened I'
+      Hardened2:
+        BookName: '&e&l&nHardened II'
+        ItemLore: '&eHardened II'
+      Hardened3:
+        BookName: '&e&l&nHardened III'
+        ItemLore: '&eHardened III'
+    Leadership:
+      BookLore:
+      - '&eThe more allies near you, the'
+      - '&emore damage you deal'
+      Leadership1:
+        BookName: '&e&l&nLeadership I'
+        ItemLore: '&eLeadership I'
+      Leadership2:
+        BookName: '&e&l&nLeadership II'
+        ItemLore: '&eLeadership II'
+      Leadership3:
+        BookName: '&e&l&nLeadership III'
+        ItemLore: '&eLeadership III'
+      Leadership4:
+        BookName: '&e&l&nLeadership IV'
+        ItemLore: '&eLeadership IV'
+      Leadership5:
+        BookName: '&e&l&nLeadership V'
+        ItemLore: '&eLeadership V'
+    Lucky:
+      BookLore:
+      - '&eYou will find yourself more lucky in'
+      - '&eall situations'
+      Lucky1:
+        BookName: '&e&l&nLucky I'
+        ItemLore: '&eLucky I'
+      Lucky2:
+        BookName: '&e&l&nLucky II'
+        ItemLore: '&eLucky II'
+      Lucky3:
+        BookName: '&e&l&nLucky III'
+        ItemLore: '&eLucky III'
+      Lucky4:
+        BookName: '&e&l&nLucky IV'
+        ItemLore: '&eLucky IV'
+      Lucky5:
+        BookName: '&e&l&nLucky V'
+        ItemLore: '&eLucky V'
+      Lucky6:
+        BookName: '&e&l&nLucky VI'
+        ItemLore: '&eLucky VI'
+      Lucky7:
+        BookName: '&e&l&nLucky VII'
+        ItemLore: '&eLucky VII'
+      Lucky8:
+        BookName: '&e&l&nLucky VIII'
+        ItemLore: '&eLucky VIII'
+      Lucky9:
+        BookName: '&e&l&nLucky IX'
+        ItemLore: '&eLucky IX'
+      Lucky10:
+        BookName: '&e&l&nLucky X'
+        ItemLore: '&eLucky X'
+    ObsidianShield:
+      BookLore:
+      - '&eGives you the ability to swim in lava'
+      ObsidianShield1:
+        BookName: '&e&l&nObsidian Shield I'
+        ItemLore: '&eObsidian Shield I'
+    Piercing:
+      BookLore:
+      - '&eInflicts more damage'
+      Piercing1:
+        BookName: '&e&l&nPiercing I'
+        ItemLore: '&ePiercing I'
+      Piercing2:
+        BookName: '&e&l&nPiercing II'
+        ItemLore: '&ePiercing II'
+      Piercing3:
+        BookName: '&e&l&nPiercing III'
+        ItemLore: '&ePiercing III'
+      Piercing4:
+        BookName: '&e&l&nPiercing IV'
+        ItemLore: '&ePiercing IV'
+      Piercing5:
+        BookName: '&e&l&nPiercing V'
+        ItemLore: '&ePiercing V'
+    Poison:
+      BookLore:
+      - '&ePoison''s your enemy'
+      Poison1:
+        BookName: '&e&l&nPoison I'
+        ItemLore: '&ePoison I'
+      Poison2:
+        BookName: '&e&l&nPoison II'
+        ItemLore: '&ePoison II'
+      Poison3:
+        BookName: '&e&l&nPoison III'
+        ItemLore: '&ePoison III'
+    Shackle:
+      BookLore:
+      - '&e'
+      Shackle1:
+        BookName: '&e&l&nShackle I'
+        ItemLore: '&eShackle I'
+      Shackle2:
+        BookName: '&e&l&nShackle II'
+        ItemLore: '&eShackle II'
+      Shackle3:
+        BookName: '&e&l&nShackle III'
+        ItemLore: '&eShackle III'
+    Silence:
+      BookLore:
+      - '&eChance to stop activation of custom enchants'
+      Silence1:
+        BookName: '&e&l&nSilence I'
+        ItemLore: '&eSilence I'
+      Silence2:
+        BookName: '&e&l&nSilence II'
+        ItemLore: '&eSilence II'
+      Silence3:
+        BookName: '&e&l&nSilence III'
+        ItemLore: '&eSilence III'
+      Silence4:
+        BookName: '&e&l&nSilence IV'
+        ItemLore: '&eSilence IV'
+    Spirits:
+      BookLore:
+      - '&eChance to summon blazes to assist'
+      - '&ein combat'
+      Spirits1:
+        BookName: '&e&l&nSpirits I'
+        ItemLore: '&eSpirits I'
+      Spirits2:
+        BookName: '&e&l&nSpirits II'
+        ItemLore: '&eSpirits II'
+      Spirits3:
+        BookName: '&e&l&nSpirits III'
+        ItemLore: '&eSpirits III'
+      Spirits4:
+        BookName: '&e&l&nSpirits IV'
+        ItemLore: '&eSpirits IV'
+      Spirits5:
+        BookName: '&e&l&nSpirits V'
+        ItemLore: '&eSpirits V'
+      Spirits6:
+        BookName: '&e&l&nSpirits VI'
+        ItemLore: '&eSpirits VI'
+      Spirits7:
+        BookName: '&e&l&nSpirits VII'
+        ItemLore: '&eSpirits VII'
+      Spirits8:
+        BookName: '&e&l&nSpirits VIII'
+        ItemLore: '&eSpirits VIII'
+      Spirits9:
+        BookName: '&e&l&nSpirits IX'
+        ItemLore: '&eSpirits IX'
+      Spirits10:
+        BookName: '&e&l&nSpirits X'
+        ItemLore: '&eSpirits X'
+    Venom:
+      BookLore:
+      - '&eA chance of dealing poison'
+      Venom1:
+        BookName: '&e&l&nVenom I'
+        ItemLore: '&eVenom I'
+      Venom2:
+        BookName: '&e&l&nVenom II'
+        ItemLore: '&eVenom II'
+      Venom3:
+        BookName: '&e&l&nVenom III'
+        ItemLore: '&eVenom III'
+    Wither:
+      BookLore:
+      - '&eWither''s your enemy'
+      Wither1:
+        BookName: '&e&l&nWither I'
+        ItemLore: '&eWither I'
+      Wither2:
+        BookName: '&e&l&nWither II'
+        ItemLore: '&eWither II'
+      Wither3:
+        BookName: '&e&l&nWither III'
+        ItemLore: '&eWither III'
+      Wither4:
+        BookName: '&e&l&nWither IV'
+        ItemLore: '&eWither IV'
+      Wither5:
+        BookName: '&e&l&nWither V'
+        ItemLore: '&eWither V'
+  Elite:
+    AntiGravity:
+      BookLore:
+      - '&eSuper jump, but with fall damage'
+      AntiGravity1:
+        BookName: '&b&l&nAnti Gravity I'
+        ItemLore: '&bAnti Gravity I'
+      AntiGravity2:
+        BookName: '&b&l&nAnti Gravity II'
+        ItemLore: '&bAnti Gravity II'
+      AntiGravity3:
+        BookName: '&b&l&nAnti Gravity III'
+        ItemLore: '&bAnti Gravity III'
+    Block:
+      BookLore:
+      - '&e'
+      Block1:
+        BookName: '&b&l&nBlock I'
+        ItemLore: '&bBlock I'
+      Block2:
+        BookName: '&b&l&nBlock II'
+        ItemLore: '&bBlock II'
+      Block3:
+        BookName: '&b&l&nBlock I'
+        ItemLore: '&bBlock II'
+    Cactus:
+      BookLore:
+      - '&eActs like thorns, but doesn''t affect durability'
+      Cactus1:
+        BookName: '&b&l&nCactus I'
+        ItemLore: '&bCactus I'
+      Cactus2:
+        BookName: '&b&l&nCactus II'
+        ItemLore: '&bCactus II'
+    DoubleStrike:
+      BookLore:
+      - '&eA chance to strike twice'
+      DoubleStrike1:
+        BookName: '&b&l&nDouble Strike I'
+        ItemLore: '&bDouble Strike I'
+      DoubleStrike2:
+        BookName: '&b&l&nDouble Strike II'
+        ItemLore: '&bDouble Strike II'
+      DoubleStrike3:
+        BookName: '&b&l&nDouble Strike III'
+        ItemLore: '&bDouble Strike III'
+    EnderWalker:
+      BookLore:
+      - '&eImmune to Wither and Poison, and'
+      - '&ecan heal at higher levels'
+      EnderWalker1:
+        BookName: '&b&l&nEnder Walker I'
+        ItemLore: '&bEnder Walker I'
+      EnderWalker2:
+        BookName: '&b&l&nEnder Walker II'
+        ItemLore: '&bEnder Walker II'
+      EnderWalker3:
+        BookName: '&b&l&nEnder Walker III'
+        ItemLore: '&bEnder Walker III'
+      EnderWalker4:
+        BookName: '&b&l&nEnder Walker IV'
+        ItemLore: '&bEnder Walker IV'
+      EnderWalker5:
+        BookName: '&b&l&nEnder Walker V'
+        ItemLore: '&bEnder Walker V'
+    Execute:
+      BookLore:
+      - '&eDamage buff when your enemy has low HP'
+      Execute1:
+        BookName: '&b&l&nExecute I'
+        ItemLore: '&bExecute I'
+      Execute2:
+        BookName: '&b&l&nExecute II'
+        ItemLore: '&bExecute II'
+      Execute3:
+        BookName: '&b&l&nExecute III'
+        ItemLore: '&bExecute III'
+      Execute4:
+        BookName: '&b&l&nExecute IV'
+        ItemLore: '&bExecute IV'
+      Execute5:
+        BookName: '&b&l&nExecute V'
+        ItemLore: '&bExecute V'
+      Execute6:
+        BookName: '&b&l&nExecute VI'
+        ItemLore: '&bExecute VI'
+      Execute7:
+        BookName: '&b&l&nExecute VII'
+        ItemLore: '&bExecute VII'
+    Hellfire:
+      BookLore:
+      - '&eAll arrows shot by you turn into'
+      - '&eexplosive fireballs'
+      Hellfire1:
+        BookName: '&b&l&nHellfire I'
+        ItemLore: '&bHellfire I'
+      Hellfire2:
+        BookName: '&b&l&nHellfire II'
+        ItemLore: '&bHellfire II'
+      Hellfire3:
+        BookName: '&b&l&nHellfire III'
+        ItemLore: '&bHellfire III'
+      Hellfire4:
+        BookName: '&b&l&nHellfire IV'
+        ItemLore: '&bHellfire IV'
+      Hellfire5:
+        BookName: '&b&l&nHellfire V'
+        ItemLore: '&bHellfire V'
+    IceAspect:
+      BookLore:
+      - '&eChance of slowing your enemy'
+      IceAspect1:
+        BookName: '&b&l&nIce Aspect I'
+        ItemLore: '&bIce Aspect I'
+      IceAspect2:
+        BookName: '&b&l&nIce Aspect II'
+        ItemLore: '&bIce Aspect II'
+      IceAspect3:
+        BookName: '&b&l&nIce Aspect III'
+        ItemLore: '&bIce Aspect III'
+    IceFreeze:
+      BookLore:
+      - '&e'
+      IceFreeze1:
+        BookName: '&b&l&nIce Freeze I'
+        ItemLore: '&bIce Freeze I'
+    Implants:
+      BookLore:
+      - '&eRegenerates health and hunger'
+      - '&ewhile walking/running'
+      Implants1:
+        BookName: '&b&l&nImplants I'
+        ItemLore: '&bImplants I'
+      Implants2:
+        BookName: '&b&l&nImplants II'
+        ItemLore: '&bImplants II'
+      Implants3:
+        BookName: '&b&l&nImplants III'
+        ItemLore: '&bImplants III'
+    Infernal:
+      BookLore:
+      - '&eExplosive fire effect'
+      Infernal1:
+        BookName: '&b&l&nInfernal I'
+        ItemLore: '&bInfernal I'
+      Infernal2:
+        BookName: '&b&l&nInfernal II'
+        ItemLore: '&bInfernal II'
+      Infernal3:
+        BookName: '&b&l&nInfernal III'
+        ItemLore: '&bInfernal III'
+    Poisoned:
+      BookLore:
+      - '&e'
+      Poisoned1:
+        BookName: '&b&l&nPoisoned I'
+        ItemLore: '&bPoisoned I'
+      Poisoned2:
+        BookName: '&b&l&nPoisoned II'
+        ItemLore: '&bPoisoned II'
+      Poisoned3:
+        BookName: '&b&l&nPoisoned III'
+        ItemLore: '&bPoisoned III'
+      Poisoned4:
+        BookName: '&b&l&nPoisoned IV'
+        ItemLore: '&bPoisoned IV'
+    Pummel:
+      BookLore:
+      - '&eChance to slow down nearby enemy'
+      - '&eplayers for a short period'
+      Pummel1:
+        BookName: '&b&l&nPummel I'
+        ItemLore: '&bPummel I'
+      Pummel2:
+        BookName: '&b&l&nPummel II'
+        ItemLore: '&bPummel II'
+      Pummel3:
+        BookName: '&b&l&nPummel III'
+        ItemLore: '&bPummel III'
+      Pummel4:
+        BookName: '&b&l&nPummel IV'
+        ItemLore: '&bPummel IV'
+    RocketEscape:
+      BookLore:
+      - '&eBlast off into the air at low HP'
+      RocketEscape1:
+        BookName: '&b&l&nRocket Escape I'
+        ItemLore: '&bRocket Escape I'
+      RocketEscape2:
+        BookName: '&b&l&nRocket Escape II'
+        ItemLore: '&bRocket Escape II'
+      RocketEscape3:
+        BookName: '&b&l&nRocket Escape III'
+        ItemLore: '&bRocket Escape III'
+    Shockwave:
+      BookLore:
+      - '&eChance to push back your attacker'
+      Shockwave1:
+        BookName: '&b&l&nShockwave I'
+        ItemLore: '&bShockwave I'
+      Shockwave2:
+        BookName: '&b&l&nShockwave II'
+        ItemLore: '&bShockwave II'
+      Shockwave3:
+        BookName: '&b&l&nShockwave III'
+        ItemLore: '&bShockwave III'
+      Shockwave4:
+        BookName: '&b&l&nShockwave IV'
+        ItemLore: '&bShockwave IV'
+      Shockwave5:
+        BookName: '&b&l&nShockwave V'
+        ItemLore: '&bShockwave V'
+    SkillSwipe:
+      BookLore:
+      - '&eSteal XP from other players'
+      SkillSwipe1:
+        BookName: '&b&l&nSkill Swipe I'
+        ItemLore: '&bSkill Swipe I'
+      SkillSwipe2:
+        BookName: '&b&l&nSkill Swipe II'
+        ItemLore: '&bSkill Swipe II'
+      SkillSwipe3:
+        BookName: '&b&l&nSkill Swipe III'
+        ItemLore: '&bSkill Swipe III'
+      SkillSwipe4:
+        BookName: '&b&l&nSkill Swipe IV'
+        ItemLore: '&bSkill Swipe IV'
+      SkillSwipe5:
+        BookName: '&b&l&nSkill Swipe V'
+        ItemLore: '&bSkill Swipe V'
+    SmokeBomb:
+      BookLore:
+      - '&eHas a chance to blind your attacker'
+      SmokeBomb1:
+        BookName: '&b&l&nSmoke Bomb I'
+        ItemLore: '&bSmoke Bomb I'
+      SmokeBomb2:
+        BookName: '&b&l&nSmoke Bomb II'
+        ItemLore: '&bSmoke Bomb II'
+      SmokeBomb3:
+        BookName: '&b&l&nSmoke Bomb III'
+        ItemLore: '&bSmoke Bomb III'
+      SmokeBomb4:
+        BookName: '&b&l&nSmoke Bomb IV'
+        ItemLore: '&bSmoke Bomb IV'
+      SmokeBomb5:
+        BookName: '&b&l&nSmoke Bomb V'
+        ItemLore: '&bSmoke Bomb V'
+      SmokeBomb6:
+        BookName: '&b&l&nSmoke Bomb VI'
+        ItemLore: '&bSmoke Bomb VI'
+      SmokeBomb7:
+        BookName: '&b&l&nSmoke Bomb VII'
+        ItemLore: '&bSmoke Bomb VII'
+      SmokeBomb8:
+        BookName: '&b&l&nSmoke Bomb VIII'
+        ItemLore: '&bSmoke Bomb VIII'
+    Springs:
+      BookLore:
+      - '&eGives jump boost'
+      Springs1:
+        BookName: '&b&l&nSprings I'
+        ItemLore: '&bSprings I'
+      Springs2:
+        BookName: '&b&l&nSprings II'
+        ItemLore: '&bSprings II'
+      Springs3:
+        BookName: '&b&l&nSprings III'
+        ItemLore: '&bSprings III'
+    Stormcaller:
+      BookLore:
+      - '&eChance to smite attacker'
+      Stormcaller1:
+        BookName: '&b&l&nStormcaller I'
+        ItemLore: '&bStormcaller I'
+      Stormcaller2:
+        BookName: '&b&l&nStormcaller II'
+        ItemLore: '&bStormcaller II'
+      Stormcaller3:
+        BookName: '&b&l&nStormcaller III'
+        ItemLore: '&bStormcaller III'
+      Stormcaller4:
+        BookName: '&b&l&nStormcaller IV'
+        ItemLore: '&bStormcaller IV'
+    Tank:
+      BookLore:
+      - '&eGives strength, resistance, and slows'
+      - '&ethe attacker upon proc'
+      Tank1:
+        BookName: '&b&l&nTank I'
+        ItemLore: '&bTank I'
+      Tank2:
+        BookName: '&b&l&nTank II'
+        ItemLore: '&bTank II'
+      Tank3:
+        BookName: '&b&l&nTank III'
+        ItemLore: '&bTank III'
+      Tank4:
+        BookName: '&b&l&nTank IV'
+        ItemLore: '&bTank IV'
+      Tank5:
+        BookName: '&b&l&nTank V'
+        ItemLore: '&bTank V'
+    Telepathy:
+     BookLore:
+     - '&e'
+     Telepathy1:
+        BookName: '&b&l&nTelepathy I'
+        ItemLore: '&bTelepathy I'
+     Telepathy2:
+        BookName: '&b&l&nTelepathy II'
+        ItemLore: '&bTelepathy II'
+     Telepathy3:
+        BookName: '&b&l&nTelepathy III'
+        ItemLore: '&bTelepathy III'
+     Telepathy4:
+        BookName: '&b&l&nTelepathy IV'
+        ItemLore: '&bTelepathy IV'
+    Teleportation:
+      BookLore:
+      - '&eChance to teleport to your arrow'
+      Teleportation1:
+        BookName: '&b&l&nTeleportation I'
+        ItemLore: '&bTeleportation I'
+      Teleportation2:
+        BookName: '&b&l&nTeleportation II'
+        ItemLore: '&bTeleportation II'
+      Teleportation3:
+        BookName: '&b&l&nTeleportation III'
+        ItemLore: '&bTeleportation III'
+      Teleportation4:
+        BookName: '&b&l&nTeleportation IV'
+        ItemLore: '&bTeleportation IV'
+      Teleportation5:
+        BookName: '&b&l&nTeleportation V'
+        ItemLore: '&bTeleportation V'
+    Trap:
+      BookLore:
+      - '&eChance to slow your enemy'
+      Trap1:
+        BookName: '&b&l&nTrap I'
+        ItemLore: '&bTrap I'
+      Trap2:
+        BookName: '&b&l&nTrap II'
+        ItemLore: '&bTrap II'
+      Trap3:
+        BookName: '&b&l&nTrap III'
+        ItemLore: '&bTrap III'
+    UndeadRuse:
+      BookLore:
+      - '&eChance to summon zombie allies upon hit'
+      UndeadRuse1:
+        BookName: '&b&l&nUndead Ruse I'
+        ItemLore: '&bUndead Ruse I'
+      UndeadRuse2:
+        BookName: '&b&l&nUndead Ruse II'
+        ItemLore: '&bUndead Ruse II'
+      UndeadRuse3:
+        BookName: '&b&l&nUndead Ruse III'
+        ItemLore: '&bUndead Ruse III'
+      UndeadRuse4:
+        BookName: '&b&l&nUndead Ruse IV'
+        ItemLore: '&bUndead Ruse IV'
+      UndeadRuse5:
+        BookName: '&b&l&nUndead Ruse V'
+        ItemLore: '&bUndead Ruse V'
+      UndeadRuse6:
+        BookName: '&b&l&nUndead Ruse VI'
+        ItemLore: '&bUndead Ruse VI'
+      UndeadRuse7:
+        BookName: '&b&l&nUndead Ruse VII'
+        ItemLore: '&bUndead Ruse VII'
+      UndeadRuse8:
+        BookName: '&b&l&nUndead Ruse VIII'
+        ItemLore: '&bUndead Ruse VIII'
+      UndeadRuse9:
+        BookName: '&b&l&nUndead Ruse IX'
+        ItemLore: '&bUndead Ruse IX'
+      UndeadRuse10:
+        BookName: '&b&l&nUndead Ruse X'
+        ItemLore: '&bUndead Ruse X'
+    Valor:
+      BookLore:
+      - '&eGives damage resistance when low'
+      - '&eon HP'
+      Valor1:
+        BookName: '&b&l&nValor I'
+        ItemLore: '&bValor I'
+      Valor2:
+        BookName: '&b&l&nValor II'
+        ItemLore: '&bValor II'
+      Valor3:
+        BookName: '&b&l&nValor III'
+        ItemLore: '&bValor III'
+      Valor4:
+        BookName: '&b&l&nValor IV'
+        ItemLore: '&bValor IV'
+      Valor5:
+        BookName: '&b&l&nValor V'
+        ItemLore: '&bValor V'
+    Vampire:
+      BookLore:
+      - '&eRecieve half health of damage given'
+      Vampire1:
+        BookName: '&b&l&nVampire I'
+        ItemLore: '&bVampire I'
+      Vampire2:
+        BookName: '&b&l&nVampire II'
+        ItemLore: '&bVampire II'
+      Vampire3:
+        BookName: '&b&l&nVampire III'
+        ItemLore: '&bVampire III'
+    Voodoo:
+      BookLore:
+      - '&eHas a chance to give Weakness'
+      - '&eto your attacker'
+      Voodoo1:
+        BookName: '&b&l&nVoodoo I'
+        ItemLore: '&bVoodoo I'
+      Voodoo2:
+        BookName: '&b&l&nVoodoo II'
+        ItemLore: '&bVoodoo II'
+      Voodoo3:
+        BookName: '&b&l&nVoodoo III'
+        ItemLore: '&bVoodoo III'
+      Voodoo4:
+        BookName: '&b&l&nVoodoo IV'
+        ItemLore: '&bVoodoo IV'
+      Voodoo5:
+        BookName: '&b&l&nVoodoo V'
+        ItemLore: '&bVoodoo V'
+      Voodoo6:
+        BookName: '&b&l&nVoodoo VI'
+        ItemLore: '&bVoodoo VI'
+  Unique:
+    Aquatic:
+      BookLore:
+      - '&eGives permanent water breathing'
+      Aquatic1:
+        BookName: '&a&l&nAquatic I'
+        ItemLore: '&aAquatic I'
+    AutoSmelt:
+      BookLore:
+      - '&eOres mined are automatically smelted'
+      AutoSmelt1:
+        BookName: '&a&l&nAuto Smelt I'
+        ItemLore: '&aAuto Smelt I'
+      AutoSmelt2:
+        BookName: '&a&l&nAuto Smelt II'
+        ItemLore: '&aAuto Smelt II'
+      AutoSmelt3:
+        BookName: '&a&l&nAuto Smelt III'
+        ItemLore: '&aAuto Smelt III'
+    Commander:
+      BookLore:
+      - '&eNearby allies are given haste'
+      Commander1:
+        BookName: '&a&l&nCommander I'
+        ItemLore: '&aCommander I'
+      Commander2:
+        BookName: '&a&l&nCommander II'
+        ItemLore: '&aCommander II'
+      Commander3:
+        BookName: '&a&l&nCommander III'
+        ItemLore: '&aCommander III'
+      Commander4:
+        BookName: '&a&l&nCommander IV'
+        ItemLore: '&aCommander IV'
+      Commander5:
+        BookName: '&a&l&nCommander V'
+        ItemLore: '&aCommander V'
+    Cowification:
+      BookLore:
+      - '&eShoots cows'
+      Cowification1:
+        BookName: '&a&l&nCowification I'
+        ItemLore: '&aCowification I'
+      Cowification2:
+        BookName: '&a&l&nCowification II'
+        ItemLore: '&aCowification II'
+      Cowification3:
+        BookName: '&a&l&nCowification III'
+        ItemLore: '&aCowification III'
+    Curse:
+      BookLore:
+      - '&eChance to cause mining fatigue'
+      Curse1:
+        BookName: '&a&l&nCurse I'
+        ItemLore: '&aCurse I'
+      Curse2:
+        BookName: '&a&l&nCurse II'
+        ItemLore: '&aCurse II'
+      Curse3:
+        BookName: '&a&l&nCurse III'
+        ItemLore: '&aCurse III'
+      Curse4:
+        BookName: '&a&l&nCurse IV'
+        ItemLore: '&aCurse IV'
+      Curse5:
+        BookName: '&a&l&nCurse V'
+        ItemLore: '&aCurse V'
+    EnderShift:
+      BookLore:
+      - '&eGives speed/health boost at low HP'
+      EnderShift1:
+        BookName: '&a&l&nEnder Shift I'
+        ItemLore: '&aEnder Shift I'
+      EnderShift2:
+        BookName: '&a&l&nEnder Shift II'
+        ItemLore: '&aEnder Shift II'
+      EnderShift3:
+        BookName: '&a&l&nEnder Shift III'
+        ItemLore: '&aEnder Shift III'
+    Experience:
+      BookLore:
+      - '&eGives more exp when mining blocks'
+      Experience1:
+        BookName: '&a&l&nExperience I'
+        ItemLore: '&aExperience I'
+      Experience2:
+        BookName: '&a&l&nExperience II'
+        ItemLore: '&aExperience II'
+      Experience3:
+        BookName: '&a&l&nExperience III'
+        ItemLore: '&aExperience III'
+      Experience4:
+        BookName: '&a&l&nExperience IV'
+        ItemLore: '&aExperience IV'
+      Experience5:
+        BookName: '&a&l&nExperience V'
+        ItemLore: '&aExperience V'
+    Explosive:
+      BookLore:
+      - '&eExplosive arrows'
+      Explosive1:
+        BookName: '&a&l&nExplosive I'
+        ItemLore: '&aExplosive I'
+      Explosive2:
+        BookName: '&a&l&nExplosive II'
+        ItemLore: '&aExplosive II'
+      Explosive3:
+        BookName: '&a&l&nExplosive III'
+        ItemLore: '&aExplosive III'
+      Explosive4:
+        BookName: '&a&l&nExplosive IV'
+        ItemLore: '&aExplosive IV'
+      Explosive5:
+        BookName: '&a&l&nExplosive V'
+        ItemLore: '&aExplosive V'
+    Featherweight:
+      BookLore:
+      - '&eChance to give a burst of haste'
+      Featherweight1:
+        BookName: '&a&l&nFeatherweight I'
+        ItemLore: '&aFeatherweight I'
+      Featherweight2:
+        BookName: '&a&l&nFeatherweight II'
+        ItemLore: '&aFeatherweight II'
+      Featherweight3:
+        BookName: '&a&l&nFeatherweight III'
+        ItemLore: '&aFeatherweight III'
+    DeepWounds:
+      BookLore:
+      - '&eIncreases the chance of the bleed effect'
+      DeepWounds1:
+        BookName: '&a&l&nDeep Wounds I'
+        ItemLore: '&aDeep Wounds I'
+      DeepWounds2:
+        BookName: '&a&l&nDeep Wounds II'
+        ItemLore: '&aDeep Wounds II'
+      DeepWounds3:
+        BookName: '&a&l&nDeep Wounds III'
+        ItemLore: '&aDeep Wounds III'
+    Frozen:
+      BookLore:
+      - '&e'
+      Frozen1:
+        BookName: '&a&l&nFrozen I'
+        ItemLore: '&aFrozen I'
+      Frozen2:
+        BookName: '&a&l&nFrozen II'
+        ItemLore: '&aFrozen II'
+      Frozen3:
+        BookName: '&a&l&nFrozen III'
+        ItemLore: '&aFrozen III'
+    Molten:
+      BookLore:
+      - '&eChance to light your attacker'
+      Molten1:
+        BookName: '&a&l&nMolten I'
+        ItemLore: '&aMolten I'
+      Molten2:
+        BookName: '&a&l&nMolten II'
+        ItemLore: '&aMolten II'
+      Molten3:
+        BookName: '&a&l&nMolten III'
+        ItemLore: '&aMolten III'
+      Molten4:
+        BookName: '&a&l&nMolten IV'
+        ItemLore: '&aMolten IV'
+    ObsidianDestroyer:
+      BookLore:
+      - '&eChance to instantly break obsidian'
+      ObsidianDestroyer1:
+        BookName: '&a&l&nObsidian Destroyer I'
+        ItemLore: '&aObsidian Destroyer I'
+      ObsidianDestroyer2:
+        BookName: '&a&l&nObsidian Destroyer II'
+        ItemLore: '&aObsidian Destroyer II'
+      ObsidianDestroyer3:
+        BookName: '&a&l&nObsidian Destroyer III'
+        ItemLore: '&aObsidian Destroyer III'
+      ObsidianDestroyer4:
+        BookName: '&a&l&nObsidian Destroyer IV'
+        ItemLore: '&aObsidian Destroyer IV'
+      ObsidianDestroyer5:
+        BookName: '&a&l&nObsidian Destroyer V'
+        ItemLore: '&aObsidian Destroyer V'
+    Paralyze:
+      BookLore:
+      - '&eSmites enemy, and has a chance to'
+      - '&eeffect slowness, and slow swinging'
+      Paralyze1:
+        BookName: '&a&l&nParalyze I'
+        ItemLore: '&aParalyze I'
+      Paralyze2:
+        BookName: '&a&l&nParalyze II'
+        ItemLore: '&aParalyze II'
+      Paralyze3:
+        BookName: '&a&l&nParalyze III'
+        ItemLore: '&aParalyze III'
+      Paralyze4:
+        BookName: '&a&l&nParalyze IV'
+        ItemLore: '&aParalyze IV'
+    PlagueCarrier:
+      BookLore:
+      - '&eSummons creepers and debuffs upon death'
+      PlagueCarrier1:
+        BookName: '&a&l&nPlague Carrier I'
+        ItemLore: '&aPlague Carrier I'
+      PlagueCarrier2:
+        BookName: '&a&l&nPlague Carrier II'
+        ItemLore: '&aPlague Carrier II'
+      PlagueCarrier3:
+        BookName: '&a&l&nPlague Carrier III'
+        ItemLore: '&aPlague Carrier III'
+      PlagueCarrier4:
+        BookName: '&a&l&nPlague Carrier IV'
+        ItemLore: '&aPlague Carrier IV'
+      PlagueCarrier5:
+        BookName: '&a&l&nPlague Carrier V'
+        ItemLore: '&aPlague Carrier V'
+      PlagueCarrier6:
+        BookName: '&a&l&nPlague Carrier VI'
+        ItemLore: '&aPlague Carrier VI'
+      PlagueCarrier7:
+        BookName: '&a&l&nPlague Carrier VII'
+        ItemLore: '&aPlague Carrier VII'
+      PlagueCarrier8:
+        BookName: '&a&l&nPlague Carrier VIII'
+        ItemLore: '&aPlague Carrier VIII'
+    Ragdoll:
+      BookLore:
+      - '&eWhenever you take damage you are'
+      - '&epushed far back'
+      Ragdoll1:
+        BookName: '&a&l&nRagdoll I'
+        ItemLore: '&aRagdoll I'
+      Ragdoll2:
+        BookName: '&a&l&nRagdoll II'
+        ItemLore: '&aRagdoll II'
+      Ragdoll3:
+        BookName: '&a&l&nRagdoll III'
+        ItemLore: '&aRagdoll III'
+      Ragdoll4:
+        BookName: '&a&l&nRagdoll IV'
+        ItemLore: '&aRagdoll IV'
+    Ravenous:
+      BookLore:
+      - '&eChance to regain hunger'
+      Ravenous1:
+        BookName: '&a&l&nRavenous I'
+        ItemLore: '&aRavenous I'
+      Ravenous2:
+        BookName: '&a&l&nRavenous II'
+        ItemLore: '&aRavenous II'
+      Ravenous3:
+        BookName: '&a&l&nRavenous III'
+        ItemLore: '&aRavenous III'
+      Ravenous4:
+        BookName: '&a&l&nRavenous IV'
+        ItemLore: '&aRavenous IV'
+    Reforged:
+      BookLore:
+      - '&eProtects item durability'
+      Reforged1:
+        BookName: '&a&l&nReforged I'
+        ItemLore: '&aReforged I'
+      Reforged2:
+        BookName: '&a&l&nReforged II'
+        ItemLore: '&aReforged II'
+      Reforged3:
+        BookName: '&a&l&nReforged III'
+        ItemLore: '&aReforged III'
+      Reforged4:
+        BookName: '&a&l&nReforged IV'
+        ItemLore: '&aReforged IV'
+      Reforged5:
+        BookName: '&a&l&nReforged V'
+        ItemLore: '&aReforged V'
+      Reforged6:
+        BookName: '&a&l&nReforged VI'
+        ItemLore: '&aReforged VI'
+      Reforged7:
+        BookName: '&a&l&nReforged VII'
+        ItemLore: '&aReforged VII'
+      Reforged8:
+        BookName: '&a&l&nReforged VIII'
+        ItemLore: '&aReforged VIII'
+      Reforged9:
+        BookName: '&a&l&nReforged IX'
+        ItemLore: '&aReforged IX'
+      Reforged10:
+        BookName: '&a&l&nReforged X'
+        ItemLore: '&aReforged X'
+    SelfDestruct:
+      BookLore:
+      - '&eWhen close to death, TNT spawns around you'
+      SelfDestruct1:
+        BookName: '&a&l&nSelf Destruct I'
+        ItemLore: '&aSelf Destruct I'
+      SelfDestruct2:
+        BookName: '&a&l&nSelf Destruct II'
+        ItemLore: '&aSelf Destruct II'
+      SelfDestruct3:
+        BookName: '&a&l&nSelf Destruct III'
+        ItemLore: '&aSelf Destruct III'
+    SpiritLink:
+      BookLore:
+      - '&eHeals nearby faction/ally members upon damage'
+      SpiritLink1:
+        BookName: '&a&l&nSpirit Link I'
+        ItemLore: '&aSpirit Link I'
+      SpiritLink2:
+        BookName: '&a&l&nSpirit Link II'
+        ItemLore: '&aSpirit Link II'
+      SpiritLink3:
+        BookName: '&a&l&nSpirit Link III'
+        ItemLore: '&aSpirit Link III'
+      SpiritLink4:
+        BookName: '&a&l&nSpirit Link IV'
+        ItemLore: '&aSpirit Link IV'
+      SpiritLink5:
+        BookName: '&a&l&nSpirit Link V'
+        ItemLore: '&aSpirit Link V'
+  Simple:
+    Confusion:
+      BookLore:
+      - '&eA chance to to effect nausea'
+      - '&eto your victim'
+      Confusion1:
+        BookName: '&7&l&nConfusion I'
+        ItemLore: '&7Confusion I'
+      Confusion2:
+        BookName: '&7&l&nConfusion II'
+        ItemLore: '&7Confusion II'
+      Confusion3:
+        BookName: '&7&l&nConfusion III'
+        ItemLore: '&7Confusion III'
+    Decapitation:
+      BookLore:
+      - '&eVictims have a chance of dropping'
+      - '&etheir head on death'
+      Decapitation1:
+        BookName: '&7&l&nDecapitation I'
+        ItemLore: '&7Decapitation I'
+      Decapitation2:
+        BookName: '&7&l&nDecapitation II'
+        ItemLore: '&7Decapitation II'
+      Decapitation3:
+        BookName: '&7&l&nDecapitation III'
+        ItemLore: '&7Decapitation III'
+    Epicness:
+      BookLore:
+      - '&eGives particles and sound effects'
+      Epicness1:
+        BookName: '&7&l&nEpicness I'
+        ItemLore: '&7Epicness I'
+      Epicness2:
+        BookName: '&7&l&nEpicness II'
+        ItemLore: '&7Epicness II'
+      Epicness3:
+        BookName: '&7&l&nEpicness III'
+        ItemLore: '&7Epicness III'
+    Glowing:
+      BookLore:
+      - '&eActives your inner glow'
+      Glowing1:
+        BookName: '&7&l&nGlowing I'
+        ItemLore: '&7Glowing I'
+    Haste:
+      BookLore:
+      - '&eMakes you mine faster'
+      Haste1:
+        BookName: '&7&l&nHaste I'
+        ItemLore: '&7Haste I'
+      Haste2:
+        BookName: '&7&l&nHaste II'
+        ItemLore: '&7Haste II'
+      Haste3:
+        BookName: '&7&l&nHaste III'
+        ItemLore: '&7Haste III'
+    Headless:
+      BookLore:
+      - '&eVictims have a chance of dropping'
+      - '&etheir head on death'
+      Headless1:
+        BookName: '&7&l&nHeadless I'
+        ItemLore: '&7Headless I'
+      Headless2:
+        BookName: '&7&l&nHeadless II'
+        ItemLore: '&7Headless II'
+      Headless3:
+        BookName: '&7&l&nHeadless III'
+        ItemLore: '&7Headless III'
+    Healing:
+      BookLore:
+      - '&eHeals player hit by the arrow'
+      Healing1:
+        BookName: '&7&l&nHealing I'
+        ItemLore: '&7Healing I'
+      Healing2:
+        BookName: '&7&l&nHealing II'
+        ItemLore: '&7Healing II'
+      Healing3:
+        BookName: '&7&l&nHealing III'
+        ItemLore: '&7Healing III'
+      Healing4:
+        BookName: '&7&l&nHealing IV'
+        ItemLore: '&7Healing IV'
+      Healing5:
+        BookName: '&7&l&nHealing V'
+        ItemLore: '&7Healing V'
+    Insomnia:
+      BookLore:
+      - '&eGives slowness, slow swinging,'
+      - '&eand confusion'
+      Insomnia1:
+        BookName: '&7&l&nInsomnia I'
+        ItemLore: '&7Insomnia I'
+      Insomnia2:
+        BookName: '&7&l&nInsomnia I'
+        ItemLore: '&7Insomnia I'
+      Insomnia3:
+        BookName: '&7&l&nInsomnia I'
+        ItemLore: '&7Insomnia I'
+      Insomnia4:
+        BookName: '&7&l&nInsomnia I'
+        ItemLore: '&7Insomnia I'
+      Insomnia5:
+        BookName: '&7&l&nInsomnia I'
+        ItemLore: '&7Insomnia I'
+      Insomnia6:
+        BookName: '&7&l&nInsomnia I'
+        ItemLore: '&7Insomnia I'
+      Insomnia7:
+        BookName: '&7&l&nInsomnia I'
+        ItemLore: '&7Insomnia I'
+    Lightning:
+      BookLore:
+      - '&eSmites player hit by arrow'
+      Lightning1:
+        BookName: '&7&l&nLightning I'
+        ItemLore: '&7Lightning I'
+      Lightning2:
+        BookName: '&7&l&nLightning II'
+        ItemLore: '&7Lightning II'
+      Lightning3:
+        BookName: '&7&l&nLightning III'
+        ItemLore: '&7Lightning III'
+    Nutrition:
+      BookLore:
+      - '&e1.2-2x normal hunger replenishment'
+      Nutrition1:
+        BookName: '&7&l&nNutrition I'
+        ItemLore: '&7Nutrition I'
+      Nutrition2:
+        BookName: '&7&l&nNutrition II'
+        ItemLore: '&7Nutrition II'
+      Nutrition3:
+        BookName: '&7&l&nNutrition III'
+        ItemLore: '&7Nutrition III'
+      Nutrition4:
+        BookName: '&7&l&nNutrition IV'
+        ItemLore: '&7Nutrition IV'
+      Nutrition5:
+        BookName: '&7&l&nNutrition V'
+        ItemLore: '&7Nutrition V'
+      Nutrition6:
+        BookName: '&7&l&nNutrition VI'
+        ItemLore: '&7Nutrition VI'
+      Nutrition7:
+        BookName: '&7&l&nNutrition VII'
+        ItemLore: '&7Nutrition VII'
+    Obliterate:
+      BookLore:
+      - '&eExtreme knockback'
+      Obliterate1:
+        BookName: '&7&l&nObliterate I'
+        ItemLore: '&7Obliterate I'
+      Obliterate2:
+        BookName: '&7&l&nObliterate II'
+        ItemLore: '&7Obliterate II'
+      Obliterate3:
+        BookName: '&7&l&nObliterate III'
+        ItemLore: '&7Obliterate III'
+      Obliterate4:
+        BookName: '&7&l&nObliterate IV'
+        ItemLore: '&7Obliterate IV'
+      Obliterate5:
+        BookName: '&7&l&nObliterate V'
+        ItemLore: '&7Obliterate V'
+    Oxygenate:
+      BookLore:
+      - '&eRefills oxygen levels when breaking'
+      - '&eblocks underwater'
+      Oxygenate1:
+        BookName: '&7&l&nOxygenate I'
+        ItemLore: '&7Oxygenate I'
+    ThunderingBlow:
+      BookLore:
+      - '&eCan cause smite effect on your enemy'
+      ThunderingBlow1:
+        BookName: '&7&l&nThundering Blow I'
+        ItemLore: '&7Thundering Blow I'
+      ThunderingBlow2:
+        BookName: '&7&l&nThundering Blow II'
+        ItemLore: '&7Thundering Blow II'
+      ThunderingBlow3:
+        BookName: '&7&l&nThundering Blow III'
+        ItemLore: '&7Thundering Blow III'
+EnchantmentOptions:
+  DefaultEnchantCap: 9
+  OpEnchantCap: 11
+  Message: '&6&lYour custom enchant cap: %levelcap%'

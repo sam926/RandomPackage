@@ -1,0 +1,518 @@
+# Made by RandomHashTags
+Tinkerer:
+  ChestName: 'You                   Tinkerer'
+  AgreePanes:
+    Name: '&eClick to ACCEPT trade'
+    Lore: ' '
+    Color: 14
+  Messages:
+    TradeAccepted: '&a&lTrade accepted.'
+    TradeCancelled: '&c&lTrade cancelled.'
+TinkererExp:
+  WhiteScroll: 1675
+  TransmogScrolled: 1775
+  Legendary:
+    BloodLust1: 71
+    BloodLust2: 83
+    BloodLust3: 98
+    BloodLust4: 104
+    BloodLust5: 121
+    BloodLust6: 149
+    Clarity1: 87
+    Clarity2: 91
+    Clarity3: 113
+    CreeperArmor1: 89
+    CreeperArmor2: 102
+    CreeperArmor3: 127
+    Deathbringer1: 143
+    Deathbringer2: 152
+    Deathbringer3: 176
+    Devour1: 108
+    Devour2: 114
+    Devour3: 126
+    Devour4: 148
+    Disarmor1: 96
+    Disarmor2: 107
+    Disarmor3: 113
+    Disarmor4: 124
+    Disarmor5: 135
+    Disarmor6: 147
+    Disarmor7: 155
+    Disarmor8: 168
+    Drunk1: 109
+    Drunk2: 144
+    Drunk3: 168
+    Drunk4: 198
+    Enlighted1: 106
+    Enlighted2: 121
+    Enlighted3: 149
+    Gears1: 142
+    Gears2: 163
+    Gears3: 186
+    Inquisitive1: 121
+    Inquisitive2: 149
+    Inquisitive3: 164
+    Inquisitive4: 194
+    Lifesteal1: 124
+    Lifesteal2: 136
+    Lifesteal3: 140
+    Lifesteal4: 154
+    Lifesteal5: 164
+    Overload1: 143
+    Overload2: 164
+    Overload3: 189
+    Rage1: 139
+    Rage2: 151
+    Rage3: 175
+    Rage4: 197
+    Rage5: 219
+    Rage6: 234
+  Ultimate:
+    ArrowLifesteal1: 53
+    ArrowLifesteal2: 65
+    ArrowLifesteal3: 71
+    ArrowLifesteal4: 87
+    ArrowLifesteal5: 96
+    Bleed1: 56
+    Bleed2: 63
+    Bleed3: 73
+    Bleed4: 83
+    Bleed5: 94
+    Bleed6: 124
+    Blessed1: 53
+    Blessed2: 65
+    Blessed3: 79
+    Blind1: 54
+    Blind2: 63
+    Blind3: 74
+    Cleave1: 52
+    Cleave2: 64
+    Cleave3: 79
+    Cleave4: 81
+    Cleave5: 97
+    Cleave6: 106
+    Cleave7: 123
+    Demonforged1: 68
+    Demonforged2: 79
+    Demonforged3: 84
+    Demonforged4: 93
+    Detonate1: 54
+    Detonate2: 63
+    Detonate3: 71
+    Detonate4: 82
+    Detonate5: 99
+    Detonate6: 101
+    Detonate7: 116
+    Detonate8: 125
+    Detonate9: 133
+    Experience1: 58
+    Experience2: 63
+    Experience3: 79
+    Experience4: 86
+    Experience5: 97
+    Guardians1: 57
+    Guardians2: 65
+    Guardians3: 79
+    Guardians4: 83
+    Guardians5: 92
+    Guardians6: 104
+    Guardians7: 111
+    Guardians8: 129
+    Guardians9: 137
+    Guardians10: 146
+    Leadership1: 58
+    Leadership2: 63
+    Leadership3: 77
+    Leadership4: 84
+    Leadership5: 91
+    Lucky1: 52
+    Lucky2: 67
+    Lucky3: 71
+    Lucky4: 83
+    Lucky5: 94
+    Lucky6: 102
+    Lucky7: 115
+    Lucky8: 123
+    Lucky9: 131
+    Lucky10: 145
+    ObsidianShield1: 94
+    Piercing1: 67
+    Piercing2: 74
+    Piercing3: 83
+    Piercing4: 96
+    Piercing5: 109
+    Poison1: 75
+    Poison2: 83
+    Poison3: 98
+    Silence1: 67
+    Silence2: 73
+    Silence3: 86
+    Silence4: 94
+    Spirits1: 53
+    Spirits2: 68
+    Spirits3: 77
+    Spirits4: 81
+    Spirits5: 96
+    Spirits6: 104
+    Spirits7: 115
+    Spirits8: 120
+    Spirits9: 132
+    Spirits10: 144
+    Venom1: 75
+    Venom2: 87
+    Venom3: 99
+    Wither1: 69
+    Wither2: 76
+    Wither3: 86
+    Wither4: 91
+    Wither5: 115
+  Elite:
+    AntiGravity1: 47
+    AntiGravity2: 56
+    AntiGravity3: 64
+    Armored1: 42
+    Armored2: 51
+    Armored3: 68
+    Armored4: 76
+    Armored5: 88
+    Block1: 45
+    Block2: 53
+    Block3: 69
+    Cactus1: 58
+    Cactus2: 64
+    DoubleStrike1: 51
+    DoubleStrike2: 66
+    DoubleStrike3: 78
+    EnderWalker1: 57
+    EnderWalker2: 62
+    EnderWalker3: 76
+    EnderWalker4: 88
+    EnderWalker5: 94
+    Execute1: 51
+    Execute2: 69
+    Execute3: 73
+    Execute4: 82
+    Execute5: 94
+    Execute6: 107
+    Execute7: 113
+    Hellfire1: 54
+    Hellfire2: 62
+    Hellfire3: 79
+    Hellfire4: 80
+    Hellfire5: 93
+    Hardened1: 71
+    Hardened2: 83
+    Hardened3: 98
+    IceAspect1: 72
+    IceAspect2: 89
+    IceAspect3: 95
+    IceFreeze1: 88
+    Implants1: 79
+    Implants2: 81
+    Implants3: 98
+    Infernal1: 75
+    Infernal2: 83
+    Infernal3: 96
+    Poisoned1: 69
+    Poisoned2: 73
+    Poisoned3: 84
+    Poisoned4: 91
+    SelfDestruct1: 68
+    SelfDestruct2: 72
+    SelfDestruct3: 87
+    Shockwave1: 58
+    Shockwave2: 64
+    Shockwave3: 71
+    Shockwave4: 87
+    Shockwave5: 96
+    SkillSwipe1: 63
+    SkillSwipe2: 78
+    SkillSwipe3: 83
+    SkillSwipe4: 91
+    SkillSwipe5: 107
+    SmokeBomb1: 59
+    SmokeBomb2: 66
+    SmokeBomb3: 72
+    SmokeBomb4: 88
+    SmokeBomb5: 97
+    SmokeBomb6: 109
+    SmokeBomb7: 114
+    SmokeBomb8: 125
+    Springs1: 78
+    Springs2: 81
+    Springs3: 94
+    Stormcaller1: 54
+    Stormcaller2: 69
+    Stormcaller3: 73
+    Stormcaller4: 88
+    Tank1: 59
+    Tank2: 67
+    Tank3: 73
+    Tank4: 86
+    Tank5: 90
+    Telepathy1: 50
+    Telepathy2: 64
+    Telepathy3: 72
+    Telepathy4: 85
+    Teleportation1: 51
+    Teleportation2: 68
+    Teleportation3: 73
+    Teleportation4: 84
+    Teleportation5: 95
+    Trap1: 62
+    Trap2: 79
+    Trap3: 83
+    UndeadRuse1: 53
+    UndeadRuse2: 69
+    UndeadRuse3: 72
+    UndeadRuse4: 85
+    UndeadRuse5: 91
+    UndeadRuse6: 108
+    UndeadRuse7: 116
+    UndeadRuse8: 124
+    UndeadRuse9: 130
+    UndeadRuse10: 145
+    Valor1: 52
+    Valor2: 69
+    Valor3: 70
+    Valor4: 85
+    Valor5: 97
+    Vampire1: 62
+    Vampire2: 70
+    Vampire3: 87
+    Voodoo1: 59
+    Voodoo2: 61
+    Voodoo3: 73
+    Voodoo4: 86
+    Voodoo5: 95
+    Voodoo6: 107
+  Unique:
+    Angelic1: 115
+    Angelic2: 138
+    Angelic3: 162
+    Angelic4: 187
+    Angelic5: 206
+    Aquatic1: 128
+    AutoSmelt1: 118
+    AutoSmelt2: 142
+    AutoSmelt3: 171
+    Commander1: 116
+    Commander2: 143
+    Commander3: 164
+    Commander4: 189
+    Commander5: 207
+    Cowification1: 104
+    Cowification2: 129
+    Cowification3: 156
+    Curse1: 113
+    Curse2: 135
+    Curse3: 158
+    Curse4: 174
+    Curse5: 191
+    EnderShift1: 103
+    EnderShift2: 127
+    EnderShift3: 149
+    Explosive1: 113
+    Explosive2: 137
+    Explosive3: 159
+    Explosive4: 181
+    Explosive5: 206
+    Featherweight1: 138
+    Featherweight2: 162
+    Featherweight3: 190
+    DeepWounds1: 119
+    DeepWounds2: 142
+    DeepWounds3: 171
+    Frozen1: 115
+    Frozen2: 131
+    Frozen3: 170
+    Molten1: 114
+    Molten2: 136
+    Molten3: 152
+    Molten4: 169
+    ObsidianDestroyer1: 111
+    ObsidianDestroyer2: 138
+    ObsidianDestroyer3: 161
+    ObsidianDestroyer4: 182
+    ObsidianDestroyer5: 205
+    Paralyze1: 113
+    Paralyze2: 137
+    Paralyze3: 159
+    Paralyze4: 191
+    PlagueCarrier1: 108
+    PlagueCarrier2: 121
+    PlagueCarrier3: 140
+    PlagueCarrier4: 168
+    PlagueCarrier5: 186
+    PlagueCarrier6: 197
+    PlagueCarrier7: 204
+    PlagueCarrier8: 219
+    Ragdoll1: 132
+    Ravenous1: 123
+    Ravenous2: 155
+    Ravenous3: 173
+    Ravenous4: 192
+    RocketEscape1: 128
+    RocketEscape2: 152
+    RocketEscape3: 197
+    SpiritLink1: 106
+    SpiritLink2: 124
+    SpiritLink3: 159
+    SpiritLink4: 185
+    SpiritLink5: 208
+  Simple:
+    Confusion1: 54
+    Confusion2: 63
+    Confusion3: 71
+    Decapitation1: 50
+    Decapitation2: 63
+    Decapitation3: 79
+    Epicness1: 54
+    Epicness2: 69
+    Epicness3: 71
+    Glowing1: 84
+    Haste1: 73
+    Haste2: 86
+    Haste3: 92
+    Headless1: 59
+    Headless2: 61
+    Headless3: 72
+    Healing1: 54
+    Healing2: 60
+    Healing3: 77
+    Healing4: 82
+    Healing5: 95
+    Insomnia1: 52
+    Insomnia2: 68
+    Insomnia3: 70
+    Insomnia4: 81
+    Insomnia5: 96
+    Insomnia6: 102
+    Insomnia7: 116
+    Lightning1: 77
+    Lightning2: 89
+    Lightning3: 90
+    Nutrition1: 53
+    Nutrition2: 68
+    Nutrition3: 75
+    Nutrition4: 84
+    Nutrition5: 92
+    Nutrition6: 108
+    Nutrition7: 114
+    Obliterate1: 59
+    Obliterate2: 66
+    Obliterate3: 72
+    Obliterate4: 88
+    Obliterate5: 94
+    Oxygenate1: 75
+    Reforged1: 58
+    Reforged2: 64
+    Reforged3: 73
+    Reforged4: 89
+    Reforged5: 90
+    Reforged6: 101
+    Reforged7: 112
+    Reforged8: 124
+    Reforged9: 133
+    Reforged10: 145
+    ThunderingBlow1: 73
+    ThunderingBlow2: 88
+    ThunderingBlow3: 91
+Dust:
+  Messages:
+    ObtainLegendaryDust: '&7You obtained a &6Legendary Magic Dust!'
+    ObtainLegendaryPrimalDust: '&7You obtained a &6&lLegendary Primal Dust!'
+    ObtainUltimateDust: '&7You obtained a &eUltimate Magic Dust!'
+    ObtainEliteDust: '&7You obtained a &bElite Magic Dust!'
+    ObtainUniqueDust: '&7You obtained a &aUnique Magic Dust!'
+    ObtainSimpleDust: '&7You obtained a &7Simple Magic Dust!'
+    # /givedp <player> <item>
+    SendLegendaryDust: '&7You gave %&eplayer% &7a &6Legendary Magic Dust!'
+    SendUltimateDust: '&7You gave &e%player% &7a &6Legendary Magic Dust!'
+    SendEliteDust: '&7You gave &e%player% &7a &6Legendary Magic Dust!'
+    SendUniqueDust: '&7You gave &e%player% &7a &6Legendary Magic Dust!'
+    SendSimpleDust: '&7You gave %&eplayer% &7a &6Legendary Magic Dust!'
+  DustItem: 'Sugar'
+  PrimalItem: 'Glowstone_Dust'
+  MysteryItem: 'Sulphur'
+  Fireballs:
+    LegendaryName: '&6Legendary Magic Dust &7(Right Click)'
+    UltimateName: '&eUltimate Magic Dust &7(Right Click)'
+    EliteName: '&bElite Magic Dust &7(Right Click)'
+    UniqueName: '&aUnique Magic Dust &7(Right Click)'
+    SimpleName: '&7Simple Magic Dust &7(Right Click)'
+    Lore:
+    - '&7Contains: &bMagic, &ePrimal, &7or &fMystery &7dust.'
+    - '&7An unidentified satchel of dust.'
+  MysteryDust:
+    Name: '&fMystery Dust'
+    Lore:
+    - '&7A failed bi-product of'
+    - '&7Magic and Primal dust.'
+  Legendary:
+    DustName: '&6Legendary Magic Dust'
+    DustLore:
+    - '&a+%percent%% Success'
+    - '&7Apply to a &6Legendary &7Enchantment Book'
+    - '&7to increase its success by &6%percent%%'
+    PrimalName: '&6&lLegendary Primal Dust'
+    PrimalLore:
+    - '&a+%percent%% Success'
+    - '&7Apply to a &6Legendary &7Enchantment Book'
+    - '&7to increase its success by &6&l%percent%%'
+  Ultimate:
+    DustName: '&eUltimate Magic Dust'
+    DustLore:
+    - '&a+%percent%% Success'
+    - '&7Apply to a &eUltimate &7Enchantment Book'
+    - '&7to increase its success by &e%percent%%'
+    PrimalName: '&e&lUltimate Primal Dust'
+    PrimalLore:
+    - '&a+%percent%% Success'
+    - '&7Apply to a &eUltimate &7Enchantment Book'
+    - '&7to increase its success by &e&l%percent%%'
+  Elite:
+    DustName: '&bElite Magic Dust'
+    DustLore:
+    - '&a+%percent%% Success'
+    - '&7Apply to a &bElite &7Enchantment Book'
+    - '&7to increase its success by &b%percent%%'
+    PrimalName: '&b&lElite Primal Dust'
+    PrimalLore:
+    - '&a+%percent%% Success'
+    - '&7Apply to a &bElite &7Enchantment Book'
+    - '&7to increase its success by &b&l%percent%%'
+  Unique:
+    DustName: '&aUnique Magic Dust'
+    DustLore:
+    - '&a+%percent%% Success'
+    - '&7Apply to a &aUnique &7Enchantment Book'
+    - '&7to increase its success by &a%percent%%'
+    PrimalName: '&a&lUnique Primal Dust'
+    PrimalLore:
+    - '&a+%percent%% Success'
+    - '&7Apply to a &aUnique &7Enchantment Book'
+    - '&7to increase its success by &a&l%percent%%'
+  Simple:
+    DustName: '&fSimple Magic Dust'
+    DustLore:
+    - '&a+%percent%% Success'
+    - '&7Apply to a &fSimple &7Enchantment Book'
+    - '&7to increase its success by &7%percent%%'
+    PrimalName: '&f&lSimple Primal Dust'
+    PrimalLore:
+    - '&a+%percent%% Success'
+    - '&7Apply to a &fSimple &7Enchantment Book'
+    - '&7to increase its success by &7&l%percent%%'
+Chances:
+  # Chance to get
+  LegendaryPrimal: 5
+  LegendaryDust: 10
+  UltimatePrimal: 5
+  UltimateDust: 10
+  ElitePrimal: 5
+  EliteDust: 10
+  UniquePrimal: 5
+  UniqueDust: 10
+  SimplePrimal: 5
+  SimpleDust: 10

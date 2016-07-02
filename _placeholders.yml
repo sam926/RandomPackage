@@ -1,0 +1,23 @@
+# Made by RandomHashTags
+#
+# This file is only made for holding data for the code the get
+# You can change almost everything in the plugin, using this file
+#
+SuccessAndDestroy:
+  Success: '&a%success%% Success Rate'
+  Destroy: '&c%destroy%% Destroy Rate'
+BookEnchantTypes:
+  # This affects all books. Changing these will change the lore of what item it can be applied to.
+  Armor: '&7Armor Enchant'
+  Axe: '&7Axe Enchant'
+  Boot: '&7Boot Enchant'
+  Bow: '&7Bow Enchant'
+  Chestplate: '&7Chestplate Enchant'
+  Helmet: '&7Helmet Enchant'
+  Leggings: '&7Leggings Enchant'
+  Pickaxe: '&7Pickaxe Enchant'
+  Shovel: '&7Shovel Enchant'
+  Sword: '&7Sword Enchant'
+  Tool: '&7Tool Enchant'
+  Weapon: '&7Weapon Enchant'
+  DropOntoItem: '&7Drop onto item to enchant'

@@ -1,0 +1,73 @@
+# Made by RandomHashTags
+SoulTrackers:
+  Item: 'Paper'
+  Simple:
+    Name: '&f&lSimple Soul Tracker'
+    ApplyLore: '&f&lSouls Harvested: %souls%'
+    Lore:
+    - '&7Apply to start tracking'
+    - '&f&lSimple Souls &7collected from kills.'
+  Unique:
+    Name: '&a&lUnique Soul Tracker'
+    ApplyLore: '&a&lSouls Harvested: %souls%'
+    Lore:
+    - '&7Apply to start tracking'
+    - '&a&lUnique Souls &7collected from kills.'
+  Elite:
+    Name: '&b&lElite Soul Tracker'
+    ApplyLore: '&b&lSouls Harvested: %souls%'
+    Lore:
+    - '&7Apply to start tracking'
+    - '&b&lElite Souls &7collected from kills.'
+  Ultimate:
+    Name: '&e&lUltimate Soul Tracker'
+    ApplyLore: '&e&lSouls Harvested: %souls%'
+    Lore:
+    - '&7Apply to start tracking'
+    - '&e&lUltimate Souls &7collected from kills.'
+  Legendary:
+    Name: '&6&lLegendary Soul Tracker'
+    ApplyLore: '&6&lSouls Harvested: %souls%'
+    Lore:
+    - '&7Apply to start tracking'
+    - '&6&lLegendary Souls &7collected from kills.'
+SoulGem:
+  Item: 'Emerald'
+  Name: '&c&lSoul Gem [&6%souls%&c&l]'
+  Lore:
+  - '&c&l* &cClick this item to activate &nSoul Mode'
+  - '&7White in "Soul Mode", your ACTIVE god tier'
+  - '&7enchantment will activate and drain souls'
+  - '&7for as long as this mode is enabled'
+  - ' '
+  - '&c&l* &7Use &c&n/splitsouls&r &7with this item'
+  - '&7to split souls off of it'
+  - ' '
+  - '&c&l* &7Stack other &cSoul Gems &7ontop of this'
+  - '&7one to combine their soul counts'
+Messages:
+  SplitSouls:
+    AddSoulGems: '&a&l+%souls% Soul Gem(s)'
+    ItemHasNoSoulTracker: '&c&l(!) &eYou must have a weapon with a Soul Tracker to do this'
+    NoSouls: '&c&l(!) &eYou need to have captured Souls to do this command'
+    Split: '&e&l(!) &eYour Soul Gem has been split into two getms successfully'
+    SplitLegendary: '&6&l-%souls% Legendary Souls'
+    SplitUltimate: '&e&l-%souls% Ultimate Souls'
+    SplitElite: '&b&l-%souls% Elite Souls'
+    SplitUnique: '&a&l-%souls% Unique Souls'
+    SplitSimple: '&f&l-%souls% Simple Souls'
+  SoulMode:
+    Activate:
+    - '&a&l** SOUL MODE: &nON&r &a&l**'
+    - '&7Activate soul enchantments will now drain soul gems'
+    Deactivate:
+    - '&c&l** SOUL MODE: &nOFF&r &c&l**'
+    - '&7Soul enchantments will no longer drain soul gems'
+  SoulTrackers:
+    ObtainSimple: '&7You obtained a &f&lSimple Soul Tracker!'
+    ObtainUnique: '&7You obtained a &a&lUnique Soul Tracker!'
+    ObtainElite: '&7You obtained a &b&lElite Soul Tracker!'
+    ObtainUltimate: '&7You obtained a &e&lUltimate Soul Tracker!'
+    ObtainLegendary: '&7You obtained a &6&lLegendary Soul Tracker!'
+  SoulGem:
+    Obtain: '&7You obtained a &c&lSoul Gem!'
