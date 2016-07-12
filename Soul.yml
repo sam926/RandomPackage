@@ -7,30 +7,45 @@ SoulTrackers:
     Lore:
     - '&7Apply to start tracking'
     - '&f&lSimple Souls &7collected from kills.'
+    - ' '
+    - '&c&lWARNING: &7Previously tracked souls'
+    - '&7will be released on apply'
   Unique:
     Name: '&a&lUnique Soul Tracker'
     ApplyLore: '&a&lSouls Harvested: %souls%'
     Lore:
     - '&7Apply to start tracking'
     - '&a&lUnique Souls &7collected from kills.'
+    - ' '
+    - '&c&lWARNING: &7Previously tracked souls'
+    - '&7will be released on apply'
   Elite:
     Name: '&b&lElite Soul Tracker'
     ApplyLore: '&b&lSouls Harvested: %souls%'
     Lore:
     - '&7Apply to start tracking'
     - '&b&lElite Souls &7collected from kills.'
+    - ' '
+    - '&c&lWARNING: &7Previously tracked souls'
+    - '&7will be released on apply'
   Ultimate:
     Name: '&e&lUltimate Soul Tracker'
     ApplyLore: '&e&lSouls Harvested: %souls%'
     Lore:
     - '&7Apply to start tracking'
     - '&e&lUltimate Souls &7collected from kills.'
+    - ' '
+    - '&c&lWARNING: &7Previously tracked souls'
+    - '&7will be released on apply'
   Legendary:
     Name: '&6&lLegendary Soul Tracker'
     ApplyLore: '&6&lSouls Harvested: %souls%'
     Lore:
     - '&7Apply to start tracking'
     - '&6&lLegendary Souls &7collected from kills.'
+    - ' '
+    - '&c&lWARNING: &7Previously tracked souls'
+    - '&7will be released on apply'
 SoulGem:
   Item: 'Emerald'
   Name: '&c&lSoul Gem [&6%souls%&c&l]'
@@ -45,6 +60,12 @@ SoulGem:
   - ' '
   - '&c&l* &7Stack other &cSoul Gems &7ontop of this'
   - '&7one to combine their soul counts'
+  #When combining soul gems, these will be the colors for collected souls (H = hundred)
+  # NOT YET IMPLEMENTED
+  LessThanOneH: '&e'
+  TwoH: '&e'
+  ThreeH: '&e'
+  FourH: '&e'
 Messages:
   SplitSouls:
     AddSoulGems: '&a&l+%souls% Soul Gem(s)'
@@ -57,6 +78,13 @@ Messages:
     SplitUnique: '&a&l-%souls% Unique Souls'
     SplitSimple: '&f&l-%souls% Simple Souls'
   SoulMode:
+    #How many souls it takes to get the SoulDrain message
+    SoulDrainAmount: 20
+    SoulDrain: '&e&l** SOULS: &n%souls%&e&l **'
+    # Delay between killing the same person and getting their soul (Measured in MINUTES)
+    DelaySoul: 10
+    # If the killer has already killed the player, and is still in the Delay
+    DelayMessage: '&c(!) You cannot collect %player%''s Soul for another %time%'
     Activate:
     - '&a&l** SOUL MODE: &nON&r &a&l**'
     - '&7Activate soul enchantments will now drain soul gems'

@@ -1,4 +1,6 @@
 # Made by RandomHashTags
+# Available Default Gui's: SoulTrackers, Other, EnchanterGui, Enchanter
+DefaultGui: 'EnchanterGui'
 EnchanterGui:
   Slots: 27
   ChestName: '&9Enchanter'

@@ -4,6 +4,7 @@ GuardiansName: '&e%player%&9''s Guardian'
 SpiritsName: '&e%player%&9''s Spirit'
 UndeadRuseName: '&e%player%&9''s Undead Zombie'
 BarbarianCriticalMessage: '&e&l** CRITICAL HIT **'
+NaturesWrath: '&2&l** NATURE''S WRATH **'
 #
 Enchantments:
   Soul:
@@ -157,8 +158,9 @@ Enchantments:
         ItemLore: '&6Deathbringer III'
     Devour:
       BookLore:
-      - '&eThe more Bleed stacks on your enemy,'
-      - '&ethe more damage done per strike'
+      - '&eMultiplies damage dealt to players'
+      - '&ewith active bleed stacks from the'
+      - '&eBleed enchantment'
       Devour1:
         BookName: '&6&l&nDevour I'
         ItemLore: '&6Devour I'
@@ -240,6 +242,21 @@ Enchantments:
       Gears3:
         BookName: '&6&l&nGears III'
         ItemLore: '&6Gears III'
+    Ghost:
+      BookLore:
+      - '&e'
+      Ghost1:
+        BookName: '&6&l&nGhost I'
+        ItemLore: '&6Ghost I'
+      Ghost2:
+        BookName: '&6&l&nGhost II'
+        ItemLore: '&6Ghost II'
+      Ghost3:
+        BookName: '&6&l&nGhost III'
+        ItemLore: '&6Ghost III'
+      Ghost4:
+        BookName: '&6&l&nGhost IV'
+        ItemLore: '&6Ghost IV'
     Inquisitive:
       BookLore:
       - '&eIncreases EXP drops from mobs'
@@ -348,9 +365,9 @@ Enchantments:
   Ultimate:
     Angelic:
       BookLore:
-      - '&eWhen wearing this enchant, when it'
-      - '&eprocs, the level of regen depends on'
-      - '&eall your armor''s Angelic levels'
+      - '&eHeals health over time whenever'
+      - '&edamaged, this enchantment is'
+      - '&estackable'
       Angelic1:
         BookName: '&e&l&nAngelic I'
         ItemLore: '&eAngelic I'
@@ -368,7 +385,9 @@ Enchantments:
         ItemLore: '&eAngelic V'
     Armored:
       BookLore:
-      - '&eChance to gain resistance when pvping'
+      - '&eDecreases damage from enemy swords by'
+      - '&e1.85% per level, this enchantment is'
+      - '&estackable'
       Armored1:
         BookName: '&e&l&nArmored I'
         ItemLore: '&eArmored I'
@@ -383,7 +402,8 @@ Enchantments:
         ItemLore: '&eArmored IV'
     ArrowLifesteal:
       BookLore:
-      - '&e'
+      - '&eA chance to steal health from'
+      - '&eopponent while fighting'
       ArrowLifesteal1:
         BookName: '&e&l&nArrow Lifesteal I'
         ItemLore: '&eArrow Lifesteal I'
@@ -401,7 +421,9 @@ Enchantments:
         ItemLore: '&eArrow Lifesteal V'
     Bleed:
       BookLore:
-      - '&e'
+      - '&eApplies bleed stacks to enemies that'
+      - '&edecrease their movement speed. Use in'
+      - '&ecombination with Devour and Blood Lust'
       Bleed1:
         BookName: '&e&l&nBleed I'
         ItemLore: '&eBleed I'
@@ -422,7 +444,7 @@ Enchantments:
         ItemLore: '&eBleed VI'
     Blessed:
       BookLore:
-      - '&eChance to remove negative potion effects'
+      - '&eChance of removing debuffs'
       Blessed1:
         BookName: '&e&l&nBlessed I'
         ItemLore: '&eBlessed I'
@@ -434,7 +456,7 @@ Enchantments:
         ItemLore: '&eBlessed III'
     Blind:
       BookLore:
-      - '&eBlinds your enemy'
+      - '&eChance of causing blindness when attacking'
       Blind1:
         BookName: '&e&l&nBlind I'
         ItemLore: '&eBlind I'
@@ -516,7 +538,8 @@ Enchantments:
         ItemLore: '&eDetonate IX'
     Guardians:
       BookLore:
-      - '&eSummons a IG to attack your enemy'
+      - '&eChance to spawn iron golems to assist'
+      - '&eyou and watch over you'
       Guardians1:
         BookName: '&e&l&nGuardians I'
         ItemLore: '&eGuardians I'
@@ -614,7 +637,7 @@ Enchantments:
         ItemLore: '&eLucky X'
     ObsidianShield:
       BookLore:
-      - '&eGives you the ability to swim in lava'
+      - '&eGives permanent fire resistance'
       ObsidianShield1:
         BookName: '&e&l&nObsidian Shield I'
         ItemLore: '&eObsidian Shield I'
@@ -662,7 +685,8 @@ Enchantments:
         ItemLore: '&eShackle III'
     Silence:
       BookLore:
-      - '&eChance to stop activation of custom enchants'
+      - '&eChange to stop activation of your'
+      - '&eenemy''s custom enchants'
       Silence1:
         BookName: '&e&l&nSilence I'
         ItemLore: '&eSilence I'
@@ -709,6 +733,23 @@ Enchantments:
       Spirits10:
         BookName: '&e&l&nSpirits X'
         ItemLore: '&eSpirits X'
+    Tank:
+      BookLore:
+      - '&eDecreases damage from enemy axes by'
+      - '&e1.85% per level, this enchantment is'
+      - '&estackable'
+      Tank1:
+        BookName: '&e&l&nTank I'
+        ItemLore: '&eTank I'
+      Tank2:
+        BookName: '&e&l&nTank II'
+        ItemLore: '&eTank II'
+      Tank3:
+        BookName: '&e&l&nTank III'
+        ItemLore: '&eTank III'
+      Tank4:
+        BookName: '&e&l&nTank IV'
+        ItemLore: '&eTank IV'
     Venom:
       BookLore:
       - '&eA chance of dealing poison'
@@ -723,7 +764,7 @@ Enchantments:
         ItemLore: '&eVenom III'
     Wither:
       BookLore:
-      - '&eWither''s your enemy'
+      - '&eA chance to give the wither effect'
       Wither1:
         BookName: '&e&l&nWither I'
         ItemLore: '&eWither I'
@@ -754,7 +795,8 @@ Enchantments:
         ItemLore: '&bAnti Gravity III'
     Block:
       BookLore:
-      - '&e'
+      - '&eChance to increase damage and'
+      - '&eredirect an attack'
       Block1:
         BookName: '&b&l&nBlock I'
         ItemLore: '&bBlock I'
@@ -849,7 +891,8 @@ Enchantments:
         ItemLore: '&bHellfire V'
     IceAspect:
       BookLore:
-      - '&eChance of slowing your enemy'
+      - '&eChance of causing the slowness'
+      - '&eeffect on your enemy'
       IceAspect1:
         BookName: '&b&l&nIce Aspect I'
         ItemLore: '&bIce Aspect I'
@@ -918,9 +961,6 @@ Enchantments:
       Pummel3:
         BookName: '&b&l&nPummel III'
         ItemLore: '&bPummel III'
-      Pummel4:
-        BookName: '&b&l&nPummel IV'
-        ItemLore: '&bPummel IV'
     RocketEscape:
       BookLore:
       - '&eBlast off into the air at low HP'
@@ -1023,25 +1063,6 @@ Enchantments:
       Stormcaller4:
         BookName: '&b&l&nStormcaller IV'
         ItemLore: '&bStormcaller IV'
-    Tank:
-      BookLore:
-      - '&eGives strength, resistance, and slows'
-      - '&ethe attacker upon proc'
-      Tank1:
-        BookName: '&b&l&nTank I'
-        ItemLore: '&bTank I'
-      Tank2:
-        BookName: '&b&l&nTank II'
-        ItemLore: '&bTank II'
-      Tank3:
-        BookName: '&b&l&nTank III'
-        ItemLore: '&bTank III'
-      Tank4:
-        BookName: '&b&l&nTank IV'
-        ItemLore: '&bTank IV'
-      Tank5:
-        BookName: '&b&l&nTank V'
-        ItemLore: '&bTank V'
     Telepathy:
      BookLore:
      - '&e'
@@ -1077,7 +1098,8 @@ Enchantments:
         ItemLore: '&bTeleportation V'
     Trap:
       BookLore:
-      - '&eChance to slow your enemy'
+      - '&eChance to give a buffed slowness'
+      - '&eeffect'
       Trap1:
         BookName: '&b&l&nTrap I'
         ItemLore: '&bTrap I'
@@ -1087,6 +1109,32 @@ Enchantments:
       Trap3:
         BookName: '&b&l&nTrap III'
         ItemLore: '&bTrap III'
+    Trickster:
+      BookLore:
+      - '&eWhen hit, you have a chance to'
+      - '&eteleport directly behind your'
+      - '&eopponent and take them by surprise'
+      Trickster1:
+        BookName: '&b&l&nTrickster I'
+        ItemLore: '&bTrickster I'
+      Trickster2:
+        BookName: '&b&l&nTrickster II'
+        ItemLore: '&bTrickster II'
+      Trickster3:
+        BookName: '&b&l&nTrickster III'
+        ItemLore: '&bTrickster III'
+      Trickster4:
+        BookName: '&b&l&nTrickster IV'
+        ItemLore: '&bTrickster IV'
+      Trickster5:
+        BookName: '&b&l&nTrickster VI'
+        ItemLore: '&bTrickster V'
+      Trickster6:
+        BookName: '&b&l&nTrickster VI'
+        ItemLore: '&bTrickster VI'
+      Trickster7:
+        BookName: '&b&l&nTrickster VII'
+        ItemLore: '&bTrickster VII'
     UndeadRuse:
       BookLore:
       - '&eChance to summon zombie allies upon hit'
@@ -1153,8 +1201,7 @@ Enchantments:
         ItemLore: '&bVampire III'
     Voodoo:
       BookLore:
-      - '&eHas a chance to give Weakness'
-      - '&eto your attacker'
+      - '&eHas a chance to deal weakness'
       Voodoo1:
         BookName: '&b&l&nVoodoo I'
         ItemLore: '&bVoodoo I'
@@ -1375,7 +1422,8 @@ Enchantments:
         ItemLore: '&aParalyze IV'
     PlagueCarrier:
       BookLore:
-      - '&eSummons creepers and debuffs upon death'
+      - '&eWhen near death, summons creepers and'
+      - '&edebuffs to avenge you'
       PlagueCarrier1:
         BookName: '&a&l&nPlague Carrier I'
         ItemLore: '&aPlague Carrier I'
@@ -1433,7 +1481,8 @@ Enchantments:
         ItemLore: '&aRavenous IV'
     Reforged:
       BookLore:
-      - '&eProtects item durability'
+      - '&eProtects tool durability, items will'
+      - '&etake longer to break'
       Reforged1:
         BookName: '&a&l&nReforged I'
         ItemLore: '&aReforged I'

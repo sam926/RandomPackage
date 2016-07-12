@@ -2,7 +2,7 @@
 Soul:
   DivineImmolation: 'false' #Not implemented
   Immortal: 'false'         #Works without souls
-  NaturesWrath: 'false'     #Works without souls
+  NaturesWrath: 'true'     #Works without souls
 Legendary:
   Barbarian: 'true'
   BloodLust: 'false'   #Not implemented
@@ -14,6 +14,7 @@ Legendary:
   Drunk: 'true'
   Enlighted: 'true'
   Gears: 'true'
+  Ghost: 'true'
   Inquisitive: 'true'
   KillAura: 'false'    #Disabled
   Lifesteal: 'true'
@@ -35,11 +36,12 @@ Ultimate:
   Leadership: 'false'     #Not implemented
   ObsidianShield: 'true'
   Lucky: 'false'          #Not implemented
-  Piercing: 'false'       #Not implemented
+  Piercing: 'true'
   Poison: 'true'
-  Shackle: 'false'        #Not implemented
+  Shackle: 'true'
   Silence: 'true'
   Spirits: 'true'
+  Tank: 'true'
   Venom: 'false'          #Not implemented
   Wither: 'true'
 Elite:
@@ -62,7 +64,6 @@ Elite:
   SmokeBomb: 'true'
   Springs: 'true'
   Stormcaller: 'true'
-  Tank: 'true'
   Telepathy: 'true'
   Teleportation: 'true'
   Trap: 'false'          #Not implemented
@@ -95,7 +96,7 @@ Unique:
 Simple:
   Confusion: 'true'
   Decapitation: 'true'
-  Epicness: 'false'       #Not implemented
+  Epicness: 'true'
   Glowing: 'true'
   Haste: 'true'
   Headless: 'true'
@@ -106,3 +107,5 @@ Simple:
   Obliterate: 'false'     #Not implemented
   Oxygenate: 'false'      #Not implemented
   ThunderingBlow: 'false' #Not implemented
+mcMMO:
+  Training: 'false'

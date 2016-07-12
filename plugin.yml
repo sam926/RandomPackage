@@ -1,11 +1,19 @@
 name: RandomPackage
 main: me.randomHashTags.randomPackage.Core.RandomPackage
 author: RandomHashTags
-version: 9001
-depend: [Factions, Vault]
-softdepend: [Beast-XpWithDraw]
+version: 16
+depend: [Vault]
+softdepend: [Essentials, Factions, Beast-XpWithDraw, MassiveCore]
 load: STARTUP
 commands:
+  near:
+    permission: 'RandomPackage.near'
+  showcase:
+    permission: 'RandomPackage.showcase'
+  addlore:
+    permission: 'RandomPackage.addlore'
+  relore:
+    permission: 'RandomPackage.relore'
   randompackage:
     description: Made by RandomHashTags
     permission: 'RandomPackage.reload'

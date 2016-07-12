@@ -1,5 +1,6 @@
 # Made by RandomHashTags
 # Enchantment ids can be found at http://minecraft.gamepedia.com/Enchanting/ID
+Enabled: 'true' # Enable the /gkit command
 Slots: 36
 Name: '&0&l&ngkits'
 Kit1:

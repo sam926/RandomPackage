@@ -3,6 +3,12 @@
 # This file is only made for holding data for the code the get
 # You can change almost everything in the plugin, using this file
 #
+Near:
+# Max distance the /near can reach. Measured in blocks
+  MaxDistance: 200
+# Leave to '' for just their name without color
+  PlayersNameColor: '&9'
+  Distance: '&f(&c%distance%m&f)&r'
 SuccessAndDestroy:
   Success: '&a%success%% Success Rate'
   Destroy: '&c%destroy%% Destroy Rate'

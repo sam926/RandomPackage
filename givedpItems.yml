@@ -10,6 +10,10 @@ WhiteScrolls:
     GaveWhiteScroll: '&6You &7gave &e%targetPlayer% &7 a &e&nWhite Scroll!'
     RecievedWhiteScroll: '&7You obtained a &e&nWhite Scroll &7from &6%giver%!'
 BlackScrolls:
+  RandomizedPercent: 'true'
+# If RandomizedPercent is true,  then leave this alone
+# Otherwise this DefaultPercent will replace the %percent% in the lore
+  DefaultPercent: 75
   Item: 'Ink_sack'
   Name: '&f&lBlack Scroll'
   Lore:
