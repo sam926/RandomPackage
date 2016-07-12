@@ -19,15 +19,18 @@ import me.randomHashTags.randomPackage.Core.RandomPackage;
 import me.randomHashTags.randomPackage.RandomPlus.Events.gkitListener;
 
 public class gkitCommand implements CommandExecutor {
-	private static Inventory gkit = Bukkit.createInventory(null, RandomPackage.getGkitConfig().getInt("Slots"), ChatColor.translateAlternateColorCodes('&', RandomPackage.getGkitConfig().getString("Name")));
+	private static Inventory gkit;
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
 		if(!(sender instanceof Player)) {
 			sender.sendMessage(ChatColor.RED + "Only players can execute this command!");
 			return true;
+		} else if(!(RandomPackage.getGkitConfig().getString("Enabled").equalsIgnoreCase("true"))) {
+			sender.sendMessage(ChatColor.RED + "gkits are currently disabled");
+			return true;
 		} else {
 			Player player = (Player) sender;
 			ArrayList<String> lore = new ArrayList<String>();
-			Inventory gkit = Bukkit.createInventory(player, RandomPackage.getGkitConfig().getInt("Slots"), ChatColor.translateAlternateColorCodes('&', RandomPackage.getGkitConfig().getString("Name")));
+			gkit = Bukkit.createInventory(null, RandomPackage.getGkitConfig().getInt("Slots"), ChatColor.translateAlternateColorCodes('&', RandomPackage.getGkitConfig().getString("Name")));
 			for(int i = 1; i <= RandomPackage.getGkitConfig().getInt("Slots"); i++) {
 				if(!(RandomPackage.getGkitConfig().getString("Kit" + i) == null)) {
 					lore.clear();

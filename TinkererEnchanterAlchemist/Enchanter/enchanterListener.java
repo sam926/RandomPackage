@@ -163,9 +163,7 @@ public class enchanterListener implements Listener {
 			} else {
 				Random random = new Random();
 				int percent = random.nextInt(100);
-				if(percent < 40) {
-					percent = 60 + percent;
-				}
+				if(percent < 40) { percent = 60 + percent; }
 				Player player = (Player) event.getWhoClicked();
 				String purchase = null, purchaseItem = null;
 				if(player.getOpenInventory().getTitle().equalsIgnoreCase(ChatColor.translateAlternateColorCodes('&', RandomPackage.getEnchanterConfig().getString("SoulTrackers.ChestName")))) {
@@ -192,21 +190,18 @@ public class enchanterListener implements Listener {
 									player.playSound(player.getLocation(), Sound.ITEM_SHIELD_BREAK, 1, 2);
 									player.sendMessage(ChatColor.translateAlternateColorCodes('&', RandomPackage.getEnchanterConfig().getString("Messages.CashWithdraw").replace("%amount%", RandomPackage.getEnchanterConfig().getString("Other." + purchaseItem + ".Price"))));
 									lore.clear();
+									
 									ItemStack item = new ItemStack(Material.ACACIA_DOOR, 1);
-									
-									if(!(purchaseItem == "MysteryMobSpawner")) { item = new ItemStack(Material.getMaterial(RandomPackage.getGivedpItemsConfig().getString(purchaseItem + ".Item").toUpperCase()), 1);
-									} else { item = new ItemStack(Material.getMaterial(RandomPackage.getMysteryMobSpawnerConfig().getString("Item").toUpperCase()), 1); }
-									
 									ItemMeta itemMeta = item.getItemMeta();
-									
-									if(!(purchaseItem == "MysteryMobSpawner")) { itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getGivedpItemsConfig().getString(purchaseItem + ".Name")));
-									} else { itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getMysteryMobSpawnerConfig().getString("Name"))); }
-									
 									if(!(purchaseItem == "MysteryMobSpawner")) {
+										item = new ItemStack(Material.getMaterial(RandomPackage.getGivedpItemsConfig().getString(purchaseItem + ".Item").toUpperCase()), 1);
+										itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getGivedpItemsConfig().getString(purchaseItem + ".Name")));
 										for(int o = 0; o < RandomPackage.getGivedpItemsConfig().getStringList(purchaseItem + ".Lore").size(); o++) {
 											lore.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getGivedpItemsConfig().getStringList(purchaseItem + ".Lore").get(o).replace("%percent%", "" + percent)));
 										}
 									} else {
+										item = new ItemStack(Material.getMaterial(RandomPackage.getMysteryMobSpawnerConfig().getString("Item").toUpperCase()), 1);
+										itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getMysteryMobSpawnerConfig().getString("Name")));
 										for(int o = 0; o < RandomPackage.getMysteryMobSpawnerConfig().getStringList("Lore").size(); o++) {
 											lore.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getMysteryMobSpawnerConfig().getStringList("Lore").get(o)));
 										}
@@ -232,9 +227,18 @@ public class enchanterListener implements Listener {
 									lore.clear();
 									ItemStack item = new ItemStack(Material.getMaterial(RandomPackage.getBookOptionsConfig().getString(purchaseItem + ".Item").toUpperCase()), 1);
 									ItemMeta itemMeta = item.getItemMeta();
-									itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getBookOptionsConfig().getString(purchaseItem + ".Name")));
-									for(int o = 0; o < RandomPackage.getBookOptionsConfig().getStringList(purchaseItem + ".Lore").size(); o++) {
-										lore.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getBookOptionsConfig().getStringList(purchaseItem + ".Lore").get(o)));
+									if(!(purchaseItem == "MysteryMobSpawner")) {
+										item = new ItemStack(Material.getMaterial(RandomPackage.getGivedpItemsConfig().getString(purchaseItem + ".Item").toUpperCase()), 1);
+										itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getGivedpItemsConfig().getString(purchaseItem + ".Name")));
+										for(int o = 0; o < RandomPackage.getGivedpItemsConfig().getStringList(purchaseItem + ".Lore").size(); o++) {
+											lore.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getGivedpItemsConfig().getStringList(purchaseItem + ".Lore").get(o).replace("%percent%", "" + percent)));
+										}
+									} else {
+										item = new ItemStack(Material.getMaterial(RandomPackage.getMysteryMobSpawnerConfig().getString("Item").toUpperCase()), 1);
+										itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getMysteryMobSpawnerConfig().getString("Name")));
+										for(int o = 0; o < RandomPackage.getMysteryMobSpawnerConfig().getStringList("Lore").size(); o++) {
+											lore.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getMysteryMobSpawnerConfig().getStringList("Lore").get(o)));
+										}
 									}
 									itemMeta.setLore(lore);
 									item.setItemMeta(itemMeta);
@@ -246,6 +250,9 @@ public class enchanterListener implements Listener {
 									return;
 								}
 							}
+						} else if(!(RandomPackage.getEnchanterConfig().getString("Other." + purchaseItem + ".Enabled").equalsIgnoreCase("true"))) {
+							event.setCancelled(true);
+							return;
 						}
 					}
 					return;
@@ -266,23 +273,18 @@ public class enchanterListener implements Listener {
 									player.playSound(player.getLocation(), Sound.ITEM_SHIELD_BREAK, 1, 2);
 									player.sendMessage(ChatColor.translateAlternateColorCodes('&', RandomPackage.getEnchanterConfig().getString("Messages.CashWithdraw").replace("%amount%", RandomPackage.getEnchanterConfig().getString(purchase + purchaseItem + ".Price"))));
 									lore.clear();
+									
 									ItemStack item = new ItemStack(Material.ACACIA_DOOR, 1);
-									if(purchase == "SoulTrackers.") {
-										item = new ItemStack(Material.getMaterial(RandomPackage.getSoulConfig().getString("SoulTrackers.Item").toUpperCase()), 1);
-									} else {
-										item = new ItemStack(Material.getMaterial(RandomPackage.getGivedpItemsConfig().getString(purchaseItem + ".Item").toUpperCase()), 1);
-									}
 									ItemMeta itemMeta = item.getItemMeta();
 									if(purchase == "SoulTrackers.") {
+										item = new ItemStack(Material.getMaterial(RandomPackage.getSoulConfig().getString("SoulTrackers.Item").toUpperCase()), 1);
 										itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getSoulConfig().getString("SoulTrackers." + purchaseItem + ".Name")));
-									} else {
-										itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getGivedpItemsConfig().getString(purchaseItem + ".Name")));
-									}
-									if(purchase == "SoulTrackers.") {
 										for(int o = 0; o < RandomPackage.getSoulConfig().getStringList("SoulTrackers." + purchaseItem + ".Lore").size(); o++) {
 											lore.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getSoulConfig().getStringList("SoulTrackers." + purchaseItem + ".Lore").get(o)));
 										}
 									} else {
+										item = new ItemStack(Material.getMaterial(RandomPackage.getGivedpItemsConfig().getString(purchaseItem + ".Item").toUpperCase()), 1);
+										itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getGivedpItemsConfig().getString(purchaseItem + ".Name")));
 										for(int o = 0; o < RandomPackage.getGivedpItemsConfig().getStringList(purchaseItem + ".Lore").size(); o++) {
 											lore.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getGivedpItemsConfig().getStringList(purchaseItem + ".Lore").get(o)));
 										}
@@ -307,11 +309,21 @@ public class enchanterListener implements Listener {
 									player.playSound(player.getLocation(), Sound.ITEM_CHORUS_FRUIT_TELEPORT, 1, 2);
 									player.sendMessage(ChatColor.translateAlternateColorCodes('&', RandomPackage.getEnchanterConfig().getString("Messages.ExpRemove").replace("%xp%", RandomPackage.getEnchanterConfig().getString(purchase + purchaseItem + ".XpCost"))));
 									lore.clear();
+									
 									ItemStack item = new ItemStack(Material.getMaterial(RandomPackage.getBookOptionsConfig().getString(purchaseItem + ".Item").toUpperCase()), 1);
 									ItemMeta itemMeta = item.getItemMeta();
-									itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getBookOptionsConfig().getString(purchaseItem + ".Name")));
-									for(int o = 0; o < RandomPackage.getBookOptionsConfig().getStringList(purchaseItem + ".Lore").size(); o++) {
-										lore.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getBookOptionsConfig().getStringList(purchaseItem + ".Lore").get(o)));
+									if(purchase == "SoulTrackers.") {
+										item = new ItemStack(Material.getMaterial(RandomPackage.getSoulConfig().getString("SoulTrackers.Item").toUpperCase()), 1);
+										itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getSoulConfig().getString(purchase + purchaseItem + ".Name")));
+										for(int o = 0; o < RandomPackage.getSoulConfig().getStringList(purchase + purchaseItem + ".Lore").size(); o++) {
+											lore.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getSoulConfig().getStringList(purchase + purchaseItem + ".Lore").get(o)));
+										}
+									} else {
+										item = new ItemStack(Material.getMaterial(RandomPackage.getBookOptionsConfig().getString(purchaseItem + ".Item").toUpperCase()), 1);
+										itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', RandomPackage.getBookOptionsConfig().getString(purchaseItem + ".Name")));
+										for(int o = 0; o < RandomPackage.getBookOptionsConfig().getStringList(purchaseItem + ".Lore").size(); o++) {
+											lore.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getBookOptionsConfig().getStringList(purchaseItem + ".Lore").get(o)));
+										}
 									}
 									itemMeta.setLore(lore);
 									item.setItemMeta(itemMeta);
@@ -323,6 +335,10 @@ public class enchanterListener implements Listener {
 									return;
 								}
 							}
+						} else if(!(RandomPackage.getEnchanterConfig().getString(purchase + purchaseItem + ".Enabled").equalsIgnoreCase("true")) && !(i == 6) && purchase == "SoulTrackers."
+								|| !(RandomPackage.getEnchanterConfig().getString(purchase + purchaseItem + ".Enabled").equalsIgnoreCase("true"))) {
+							event.setCancelled(true);
+							return;
 						}
 					}
 					return;

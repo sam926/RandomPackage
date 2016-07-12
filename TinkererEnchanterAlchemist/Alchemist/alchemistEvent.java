@@ -5,6 +5,7 @@ import java.util.Random;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Effect;
+import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -77,32 +78,29 @@ public class alchemistEvent implements Listener {
 						if(price.get(i).startsWith(player.getName())) {
 							cost = Integer.parseInt(price.get(i).replace(player.getName() + "_", ""));
 							price.remove(i);
+							event.setCancelled(true);
+							
+							if(!(player.getTotalExperience() >= cost) && !(player.getGameMode() == GameMode.CREATIVE)) {
+								player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_NO, 1, 2);
+								player.sendMessage(ChatColor.translateAlternateColorCodes('&', RandomPackage.getAlchemistConfig().getString("Messages.NeedMoreXp")));
+							} else {
+								int experience = player.getTotalExperience() - cost;
+								if(!(player.getGameMode() == GameMode.CREATIVE)) { player.setTotalExperience(0); player.setExp(0); player.setLevel(0); player.giveExp(experience); }
+								
+								player.getInventory().addItem(player.getOpenInventory().getItem(13));
+								player.playSound(player.getLocation(), Sound.BLOCK_STONE_BUTTON_CLICK_ON, 1, 1);
+								Random random = new Random();
+								for(int o = 1; o <= 50; o++) {
+									player.getWorld().playEffect(new Location(player.getWorld(), player.getLocation().getX() + random.nextDouble(), player.getLocation().getY() + random.nextDouble(), player.getLocation().getZ() + random.nextDouble()), Effect.HAPPY_VILLAGER, 1);
+								}
+								player.playSound(player.getLocation(), Sound.BLOCK_PORTAL_TRAVEL, 1, 2);
+							}
+							player.updateInventory();
+							player.closeInventory();
+							return;
 						}
 					}
-					if(!(player.getTotalExperience() >= cost)) {
-						event.setCancelled(true);
-						player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_NO, 1, 2);
-						player.sendMessage(ChatColor.translateAlternateColorCodes('&', RandomPackage.getAlchemistConfig().getString("Messages.NeedMoreXp")));
-						player.closeInventory();
-						return;
-					} else {
-						event.setCancelled(true);
-						
-						int experience = player.getTotalExperience() - cost;
-						player.setTotalExperience(0); player.setExp(0); player.setLevel(0); player.giveExp(experience);
-						
-						player.getInventory().addItem(player.getOpenInventory().getItem(13));
-						player.playSound(player.getLocation(), Sound.BLOCK_STONE_BUTTON_CLICK_ON, 1, 1);
-						player.updateInventory();
-						player.getOpenInventory().setItem(22, new ItemStack(Material.GOLDEN_APPLE, 1));
-						player.closeInventory();
-						Random random = new Random();
-						for(int i = 1; i <= 50; i++) {
-							player.getWorld().playEffect(new Location(player.getWorld(), player.getLocation().getX() + random.nextDouble(), player.getLocation().getY() + + random.nextDouble(), player.getLocation().getZ() + random.nextDouble()), Effect.HAPPY_VILLAGER, 1);
-						}
-						player.playSound(player.getLocation(), Sound.BLOCK_PORTAL_TRAVEL, 1, 1);
-						return;
-					}
+					return;
 				}
 			} else if(event.getRawSlot() > 27 && event.getCurrentItem().getType().equals(Material.STAINED_GLASS_PANE)) { event.setCancelled(true); return; } else {
 				if(event.getCurrentItem().getType().equals(Material.BOOK) && event.getCurrentItem().hasItemMeta() && event.getCurrentItem().getItemMeta().hasLore() && event.getCurrentItem().getItemMeta().hasDisplayName()) {
@@ -311,10 +309,11 @@ public class alchemistEvent implements Listener {
 		Player player = (Player) event.getPlayer();
 		if(!(player.getOpenInventory().getTitle() == null)
 				&& player.getOpenInventory().getTitle().equalsIgnoreCase(ChatColor.translateAlternateColorCodes('&', RandomPackage.getAlchemistConfig().getString("ChestName")))
-				&& !(player.getOpenInventory().getItem(22).getType().equals(Material.getMaterial(RandomPackage.getAlchemistConfig().getString("Gui.Preview.Item").toUpperCase())))
-				&& player.getOpenInventory().getItem(22).hasItemMeta() && player.getOpenInventory().getItem(22).getItemMeta().hasDisplayName()
-				&& player.getOpenInventory().getItem(22).getItemMeta().getDisplayName().equalsIgnoreCase(ChatColor.translateAlternateColorCodes('&', RandomPackage.getAlchemistConfig().getString("Gui.Preview.Name")))
-				|| player.getOpenInventory().getItem(22) == new ItemStack(Material.GOLDEN_APPLE, 1)) {
+				&& !(player.getOpenInventory().getItem(13).getType().equals(Material.getMaterial(RandomPackage.getAlchemistConfig().getString("Gui.Preview.Item").toUpperCase())))
+				&& player.getOpenInventory().getItem(13).hasItemMeta() && player.getOpenInventory().getItem(13).getItemMeta().hasDisplayName()
+				&& !(player.getOpenInventory().getItem(13).getItemMeta().getDisplayName().equalsIgnoreCase(ChatColor.translateAlternateColorCodes('&', RandomPackage.getAlchemistConfig().getString("Gui.Preview.Name"))))
+				|| player.getOpenInventory().getTitle().equalsIgnoreCase(ChatColor.translateAlternateColorCodes('&', RandomPackage.getAlchemistConfig().getString("ChestName")))
+				&& !(player.getOpenInventory().getItem(3) == null) && !(player.getOpenInventory().getItem(5) == null)) {
 			if(!(player.getOpenInventory().getItem(3) == null)) { player.getInventory().addItem(player.getOpenInventory().getItem(3)); }
 			if(!(player.getOpenInventory().getItem(5) == null)) { player.getInventory().addItem(player.getOpenInventory().getItem(5)); }
 			player.updateInventory();

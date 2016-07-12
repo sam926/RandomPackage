@@ -15,7 +15,9 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import me.randomHashTags.randomPackage.Commands.RandomPackageCommand;
+import me.randomHashTags.randomPackage.Commands.addlore;
 import me.randomHashTags.randomPackage.Commands.newGivedp;
+import me.randomHashTags.randomPackage.Commands.relore;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Books.BookFireworks;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Books.EnchantBookLores;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Books.EnchantBookNames;
@@ -31,12 +33,10 @@ import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.DoubleS
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.Execute;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.HellFire;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.Implants;
-import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.Pummel;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.RocketEscape;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.SkillSwipe;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.SmokeBomb;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.Stormcaller;
-import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.Tank;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.Teleportation;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.UndeadRuse;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Elite.Valor;
@@ -47,32 +47,34 @@ import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Legendary.Cre
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Legendary.Deathbringer;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Legendary.Disarmor;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Legendary.Enlighted;
+import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Legendary.Ghost;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Legendary.Inquisitive;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Legendary.Lifesteal;
-import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Legendary.Protection;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Legendary.Rage;
+import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.NotFinished.Epicness;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Simple.Confusion;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Simple.Decapitation;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Simple.Haste;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Simple.Headless;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Simple.Healing;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Simple.Lightning;
+import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Soul.NaturesWrath;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Angelic;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Armored;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Blessed;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Blind;
-import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Cleave;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Demonforged;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Detonate;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Guardians;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Hardened;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Piercing;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Poison;
+import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Shackle;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Silence;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Spirits;
+import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Tank;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Ultimate.Wither;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Unique.AutoSmelt;
-import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Unique.Commander;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Unique.Cowification;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Unique.Curse;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Unique.DeepWounds;
@@ -86,6 +88,10 @@ import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Unique.Obsidi
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Unique.Ragdoll;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Unique.Ravenous;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.Unique.Reforged;
+import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.factionEnchants.Cleave;
+import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.factionEnchants.Commander;
+import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.factionEnchants.Protection;
+import me.randomHashTags.randomPackage.RandomArmorEffects.Enchants.factionEnchants.Pummel;
 import me.randomHashTags.randomPackage.RandomArmorEffects.GlobalEvents.globalEvents;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Soul.newSoul;
 import me.randomHashTags.randomPackage.RandomArmorEffects.Soul.soulAdd;
@@ -116,7 +122,6 @@ public class RandomPackage extends JavaPlugin {
 	
 	public static Economy econ = null;
 	
-	
 	private PluginManager pm = getServer().getPluginManager();
 	public static Plugin plugin;
 	public static Plugin getPlugin() { return plugin; }
@@ -124,7 +129,8 @@ public class RandomPackage extends JavaPlugin {
 	private boolean setupEconomy() {
 		if(getServer().getPluginManager().getPlugin("Vault") == null) { return false; }
 	    RegisteredServiceProvider<Economy> rsp = getServer().getServicesManager().getRegistration(Economy.class);
-	    if(rsp == null) { return false; } econ = rsp.getProvider(); return econ != null; }
+	    if(rsp == null) { return false; } econ = rsp.getProvider(); return econ != null;
+	}
 	
 	public void onEnable() {
 		configSetup();
@@ -135,11 +141,13 @@ public class RandomPackage extends JavaPlugin {
 		TinkererEnchanterAlchemist();
 		registerEnchants();
 		RandomPlus();
+		
+		factionEnchants();
+		//mcMMOEnchants();
 		//CustomTNT();
 		
 		if(!(setupEconomy())) {
             getLogger().severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
-            if(Bukkit.getPluginManager().getPlugin("MassiveCore") == null) { getLogger().severe(String.format("[%s] - Disabled due to no MassiveCore dependency found", getDescription().getName())); }
             getServer().getPluginManager().disablePlugin(this);
             return;
 		}
@@ -253,8 +261,6 @@ public class RandomPackage extends JavaPlugin {
 	}
 	
 	
-	
-	
 	public void RandomArmorEffects() {
 		getCommand("splitsouls").setExecutor(new splitsouls());
 		getCommand("levelCap").setExecutor(new levelcap());
@@ -263,6 +269,10 @@ public class RandomPackage extends JavaPlugin {
 		getCommand("randomenchantbooks").setExecutor(new randomEnchantBooks());
 		getCommand("randomBookGui").setExecutor(new BookGui());
 		getCommand("RandomPackage").setExecutor(new RandomPackageCommand());
+		getCommand("near").setExecutor(new Ghost());
+		getCommand("addlore").setExecutor(new addlore());
+		getCommand("relore").setExecutor(new relore());
+		//getCommand("showcase").setExecutor(new showcase());
 		
 		pm.registerEvents(new BookFireworks(), this);
 		pm.registerEvents(new EnchantType(), this);
@@ -294,14 +304,12 @@ public class RandomPackage extends JavaPlugin {
 		pm.registerEvents(new Enlighted(), this);
 		//pm.registerEvents(new KillAura(), this);
 		pm.registerEvents(new Lifesteal(), this);
-		pm.registerEvents(new Protection(), this);
 		pm.registerEvents(new Rage(), this);
 		
 		// Ultimate
 		pm.registerEvents(new Armored(), this);
 		pm.registerEvents(new Blessed(), this);
 		pm.registerEvents(new Blind(), this);
-		pm.registerEvents(new Cleave(), this);
 		pm.registerEvents(new Detonate(), this);
 		pm.registerEvents(new Disarmor(), this);
 		pm.registerEvents(new Experience(), this);
@@ -309,7 +317,7 @@ public class RandomPackage extends JavaPlugin {
 		pm.registerEvents(new Inquisitive(), this);
 		pm.registerEvents(new Piercing(), this);
 		pm.registerEvents(new Poison(), this);
-		//pm.registerEvents(new Shackle(), this);
+		pm.registerEvents(new Shackle(), this);
 		pm.registerEvents(new Silence(), this);
 		pm.registerEvents(new Spirits(), this);
 		pm.registerEvents(new Wither(), this);
@@ -321,7 +329,6 @@ public class RandomPackage extends JavaPlugin {
 		pm.registerEvents(new Hardened(), this);
 		pm.registerEvents(new HellFire(), this);
 		pm.registerEvents(new Implants(), this);
-		pm.registerEvents(new Pummel(), this);
 		pm.registerEvents(new Reforged(), this);
 		pm.registerEvents(new SkillSwipe(), this);
 		pm.registerEvents(new SmokeBomb(), this);
@@ -337,7 +344,6 @@ public class RandomPackage extends JavaPlugin {
 		// Unique
 		pm.registerEvents(new Angelic(), this);
 		pm.registerEvents(new AutoSmelt(), this);
-		pm.registerEvents(new Commander(), this);
 		pm.registerEvents(new Cowification(), this);
 		pm.registerEvents(new Curse(), this);
 		pm.registerEvents(new DeepWounds(), this);
@@ -355,6 +361,7 @@ public class RandomPackage extends JavaPlugin {
 		// Simple
 		pm.registerEvents(new Confusion(), this);
 		pm.registerEvents(new Decapitation(), this);
+		pm.registerEvents(new Epicness(), this);
 		pm.registerEvents(new Haste(), this);
 		pm.registerEvents(new Headless(), this);
 		pm.registerEvents(new Healing(), this);
@@ -365,5 +372,23 @@ public class RandomPackage extends JavaPlugin {
 	private void pluginDisableEvent(PluginDisableEvent event) {
 		Bukkit.getScheduler().cancelAllTasks();
 		return;
+	}
+	private void factionEnchants() {
+		if(!(Bukkit.getPluginManager().getPlugin("Factions") == null)) {
+			// Legendary
+			pm.registerEvents(new Protection(), this);
+			// Ultimate
+			pm.registerEvents(new Cleave(), this);
+			// Elite
+			pm.registerEvents(new Pummel(), this);
+			// Unique
+			pm.registerEvents(new Commander(), this);
+			// Simple
+		}
+	}
+	private void mcMMOEnchants() {
+		/*if(!(Bukkit.getPluginManager().getPlugin("mcMMO") == null)) {
+			pm.registerEvents(new Training(), this);
+		}*/
 	}
 }

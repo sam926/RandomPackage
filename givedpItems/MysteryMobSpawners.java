@@ -46,7 +46,7 @@ public class MysteryMobSpawners implements Listener {
 			} else if(randomChance == 3) {
 				spawnerType = "Creeper"; spawnerName = ChatColor.translateAlternateColorCodes('&', RandomPackage.getMysteryMobSpawnerConfig().getString("Creeper.DisplayName"));
 			} else if(randomChance == 4) {
-				spawnerType = "Blaze"; spawnerName = ChatColor.translateAlternateColorCodes('&', RandomPackage.getMysteryMobSpawnerConfig().getString("Blaze.IronGolem"));
+				spawnerType = "Blaze"; spawnerName = ChatColor.translateAlternateColorCodes('&', RandomPackage.getMysteryMobSpawnerConfig().getString("Blaze.DisplayName"));
 			} else if(randomChance == 5) {
 				spawnerType = "VillagerGolem"; spawnerName = ChatColor.translateAlternateColorCodes('&', RandomPackage.getMysteryMobSpawnerConfig().getString("IronGolem.DisplayName"));
 			} else if(randomChance == 6) {

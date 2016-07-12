@@ -30,8 +30,7 @@ public class enchanterCommand implements CommandExecutor {
 				lore.clear();
 				if(i == 1) { iteM = "SoulTrackers";
 				} else if(i == 2) { iteM = "Books";
-				} else if(i == 3) { iteM = "Other";
-				}
+				} else if(i == 3) { iteM = "Other"; }
 				for(int o = 0; o < RandomPackage.getEnchanterConfig().getStringList("EnchanterGui." + iteM + ".Lore").size(); o++) {
 					lore.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getEnchanterConfig().getStringList("EnchanterGui." + iteM + ".Lore").get(o)));
 				}

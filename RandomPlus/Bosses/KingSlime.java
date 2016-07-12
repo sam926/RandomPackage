@@ -37,6 +37,7 @@ public class KingSlime implements Listener {
 		kingSlime.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 99999, 3));
 		kingSlime.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 99999, 3));
 		kingSlime.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 99999, 0));
+		kingSlime.addPotionEffect(new PotionEffect(PotionEffectType.ABSORPTION, 99999, 3));
 		kingSlime.setCollidable(false);
 		kingSlime.setCanPickupItems(false);
 		kingSlime.setSize(6);

@@ -139,7 +139,8 @@ public class newGivedp implements CommandExecutor {
 		
 		Random random = new Random();
 		int randomNumber = random.nextInt(100);
-		if(randomNumber < 50) { randomNumber = 50 + randomNumber; }
+		if(!(RandomPackage.getGivedpItemsConfig().getString("BlackScrolls.RandomizedPercent").equalsIgnoreCase("true"))) { randomNumber = RandomPackage.getGivedpItemsConfig().getInt("BlackScrolls.DefaultPercent");
+		} else if(randomNumber < 50) { randomNumber = 50 + randomNumber; }
 		
 		lore.clear();
 		

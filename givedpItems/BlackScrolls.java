@@ -42,8 +42,7 @@ public class BlackScrolls implements Listener {
 			ItemMeta bookMeta = book.getItemMeta();
 			
 			Random random = new Random();
-			int randomChance = event.getCurrentItem().getItemMeta().getLore().size();
-			int randomSlot = random.nextInt(randomChance);
+			int randomSlot = random.nextInt(event.getCurrentItem().getItemMeta().getLore().size());
 			
 			for(int o = 50; o <= 100; o++) {
 				if(event.getCursor().getItemMeta().getLore().get(2).contains(ChatColor.translateAlternateColorCodes('&', RandomPackage.getGivedpItemsConfig().getStringList("BlackScrolls.Lore").get(2).replace("%percent%", "" + o)))) {
