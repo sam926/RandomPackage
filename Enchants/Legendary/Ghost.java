@@ -24,7 +24,7 @@ public class Ghost implements CommandExecutor {
 				if(entity instanceof Player) {
 					Player nearbyPlayer = (Player) entity;
 					nearbyPlayers.add(ChatColor.translateAlternateColorCodes('&', RandomPackage.getPlaceholderConfig().getString("Near.PlayersNameColor")) + nearbyPlayer.getName() + ChatColor.translateAlternateColorCodes('&', RandomPackage.getPlaceholderConfig().getString("Near.Distance").replace("%distance%", "" + (int) nearbyPlayer.getLocation().distance(player.getLocation()))));
-					for(int i = 1; i <= 4; i++) {
+					for(int i = 1; i <= 3; i++) {
 						if(!(nearbyPlayer.getInventory().getBoots() == null) && nearbyPlayer.getInventory().getBoots().hasItemMeta() && nearbyPlayer.getInventory().getBoots().getItemMeta().hasLore() && nearbyPlayer.getInventory().getBoots().getItemMeta().getLore().contains(ChatColor.translateAlternateColorCodes('&', RandomPackage.getPlugin().getConfig().getString("Enchantments.Legendary.Ghost.Ghost" + i + ".ItemLore")))
 								&& nearbyPlayer.getLocation().distance(player.getLocation()) <= i * 50) {
 							nearbyPlayers.remove(ChatColor.translateAlternateColorCodes('&', RandomPackage.getPlaceholderConfig().getString("Near.PlayersNameColor")) + nearbyPlayer.getName() + ChatColor.translateAlternateColorCodes('&', RandomPackage.getPlaceholderConfig().getString("Near.Distance").replace("%distance%", "" + (int) nearbyPlayer.getLocation().distance(player.getLocation()))));
